@@ -1,0 +1,299 @@
+{
+  "routes": {
+    "1": {
+      "id": "1",
+      "name": "1",
+      "color": "#db2828",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Good",
+      "visible": true,
+      "scheduled": true
+    },
+    "2": {
+      "id": "2",
+      "name": "2",
+      "color": "#db2828",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": true,
+      "scheduled": true
+    },
+    "3": {
+      "id": "3",
+      "name": "3",
+      "color": "#db2828",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": true,
+      "scheduled": true
+    },
+    "4": {
+      "id": "4",
+      "name": "4",
+      "color": "#21ba45",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Good",
+      "visible": true,
+      "scheduled": true
+    },
+    "5": {
+      "id": "5",
+      "name": "5",
+      "color": "#21ba45",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": true,
+      "scheduled": true
+    },
+    "6": {
+      "id": "6",
+      "name": "6",
+      "color": "#21ba45",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Good",
+      "visible": true,
+      "scheduled": true
+    },
+    "7": {
+      "id": "7",
+      "name": "7",
+      "color": "#a333c8",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": true,
+      "scheduled": true
+    },
+    "6X": {
+      "id": "6X",
+      "name": "6X",
+      "color": "#21ba45",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Scheduled",
+      "visible": false,
+      "scheduled": false
+    },
+    "7X": {
+      "id": "7X",
+      "name": "7X",
+      "color": "#a333c8",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Scheduled",
+      "visible": false,
+      "scheduled": false
+    },
+    "A": {
+      "id": "A",
+      "name": "A",
+      "color": "#2185d0",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Delay",
+      "visible": true,
+      "scheduled": true
+    },
+    "B": {
+      "id": "B",
+      "name": "B",
+      "color": "#f2711c",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Scheduled",
+      "visible": true,
+      "scheduled": false
+    },
+    "C": {
+      "id": "C",
+      "name": "C",
+      "color": "#2185d0",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Delay",
+      "visible": true,
+      "scheduled": true
+    },
+    "D": {
+      "id": "D",
+      "name": "D",
+      "color": "#f2711c",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Delay",
+      "visible": true,
+      "scheduled": true
+    },
+    "E": {
+      "id": "E",
+      "name": "E",
+      "color": "#2185d0",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Slow",
+      "visible": true,
+      "scheduled": true
+    },
+    "F": {
+      "id": "F",
+      "name": "F",
+      "color": "#f2711c",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Slow",
+      "visible": true,
+      "scheduled": true
+    },
+    "FX": {
+      "id": "FX",
+      "name": "FX",
+      "color": "#f2711c",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Scheduled",
+      "visible": false,
+      "scheduled": false
+    },
+    "G": {
+      "id": "G",
+      "name": "G",
+      "color": "#b5cc18",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Good Service",
+      "visible": true,
+      "scheduled": true
+    },
+    "J": {
+      "id": "J",
+      "name": "J",
+      "color": "#a5673f",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": true,
+      "scheduled": true
+    },
+    "L": {
+      "id": "L",
+      "name": "L",
+      "color": "#A0A0A0",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Good",
+      "visible": true,
+      "scheduled": true
+    },
+    "M": {
+      "id": "M",
+      "name": "M",
+      "color": "#f2711c",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": true,
+      "scheduled": true
+    },
+    "N": {
+      "id": "N",
+      "name": "N",
+      "color": "#fbbd08",
+      "text_color": "#000000",
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": true,
+      "scheduled": true
+    },
+    "Q": {
+      "id": "Q",
+      "name": "Q",
+      "color": "#fbbd08",
+      "text_color": "#000000",
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": true,
+      "scheduled": true
+    },
+    "R": {
+      "id": "R",
+      "name": "R",
+      "color": "#fbbd08",
+      "text_color": "#000000",
+      "alternate_name": null,
+      "status": "Not Good",
+      "visible": true,
+      "scheduled": true
+    },
+    "GS": {
+      "id": "GS",
+      "name": "S",
+      "color": "#767676",
+      "text_color": null,
+      "alternate_name": "42 St Shuttle",
+      "status": "Not Good",
+      "visible": true,
+      "scheduled": true
+    },
+    "FS": {
+      "id": "FS",
+      "name": "S",
+      "color": "#767676",
+      "text_color": null,
+      "alternate_name": "Franklin Avenue Shuttle",
+      "status": "Not Good",
+      "visible": true,
+      "scheduled": true
+    },
+    "H": {
+      "id": "H",
+      "name": "S",
+      "color": "#767676",
+      "text_color": null,
+      "alternate_name": "Rockaway Park Shuttle",
+      "status": "Good Service",
+      "visible": true,
+      "scheduled": true
+    },
+    "SI": {
+      "id": "SI",
+      "name": "SIR",
+      "color": "#2185d0",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Service Change",
+      "visible": false,
+      "scheduled": true
+    },
+    "W": {
+      "id": "W",
+      "name": "W",
+      "color": "#fbbd08",
+      "text_color": "#000000",
+      "alternate_name": null,
+      "status": "Not Scheduled",
+      "visible": true,
+      "scheduled": false
+    },
+    "Z": {
+      "id": "Z",
+      "name": "Z",
+      "color": "#a5673f",
+      "text_color": null,
+      "alternate_name": null,
+      "status": "Not Scheduled",
+      "visible": true,
+      "scheduled": false
+    }
+  },
+  "blog_post": {
+    "link": "https://medium.com/good-service/rebuilding-goodservice-io-for-2-0-37903c348405?source=rss----adc4a7ae40a7---4",
+    "title": "Rebuilding goodservice.io for 2.0"
+  },
+  "timestamp": 1635694366
+}

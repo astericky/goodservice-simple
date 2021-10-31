@@ -1,0 +1,9934 @@
+{
+  "stops": [
+    {
+      "id": "L06",
+      "name": "1 Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M14 SBS",
+          "airport_connection": false,
+          "sbs": true
+        },
+        {
+          "route": "M15 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F14",
+      "name": "2 Av",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M15 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L05",
+      "name": "3 Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "619",
+      "name": "3 Av - 138 St",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "221",
+      "name": "3 Av - 149 St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx41 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F23",
+      "name": "4 Av",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "R33"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "724",
+      "name": "5 Av",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": [
+        "D16"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F12",
+      "name": "5 Av/53 St",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R13",
+      "name": "5 Av/59 St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L02",
+      "name": "6 Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "132",
+        "D19"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "F24",
+      "name": "7 Av",
+      "secondary_name": "9 St",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D14",
+      "name": "7 Av",
+      "secondary_name": "53 St",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D25",
+      "name": "7 Av",
+      "secondary_name": "Flatbush Av",
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L01",
+      "name": "8 Av",
+      "secondary_name": "14 St",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A31"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M14 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "N02",
+      "name": "8 Av",
+      "secondary_name": "62 St",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R21",
+      "name": "8 St - NYU",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B12",
+      "name": "9 Av",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R33",
+      "name": "9 St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "F23"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R20",
+      "name": "14 St - Union Sq",
+      "secondary_name": "Broadway Line",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "635",
+        "L03"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M14 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "L03",
+      "name": "14 St - Union Sq",
+      "secondary_name": "Canarsie Line",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "635",
+        "R20"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "635",
+      "name": "14 St - Union Sq",
+      "secondary_name": "Lexington Av Line",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ],
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "L03",
+        "R20"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M14 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D19",
+      "name": "14 St",
+      "secondary_name": "6 Av",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "132",
+        "L02"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M14 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "132",
+      "name": "14 St",
+      "secondary_name": "7 Av",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ],
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "D19",
+        "L02"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M14 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "A31",
+      "name": "14 St",
+      "secondary_name": "8 Av",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "L01"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M14 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F25",
+      "name": "15 St - Prospect Park",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "N05",
+      "name": "18 Av",
+      "secondary_name": "64 St",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F30",
+      "name": "18 Av",
+      "secondary_name": "McDonald Av",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B19",
+      "name": "18 Av",
+      "secondary_name": "New Utrecht Av",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "131",
+      "name": "18 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "N06",
+      "name": "20 Av",
+      "secondary_name": "64 St",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B20",
+      "name": "20 Av",
+      "secondary_name": "New Utrecht Av",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G24",
+      "name": "21 St",
+      "secondary_name": null,
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B04",
+      "name": "21 St - Queensbridge",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "D18",
+      "name": "23 St",
+      "secondary_name": "6 Av",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M23 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "130",
+      "name": "23 St",
+      "secondary_name": "7 Av",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M23 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A30",
+      "name": "23 St",
+      "secondary_name": "8 Av",
+      "routes": {
+        "A": [
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M23 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R19",
+      "name": "23 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M23 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "634",
+      "name": "23 St",
+      "secondary_name": "Park Av S",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M23 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "B22",
+      "name": "25 Av",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R35",
+      "name": "25 St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "129",
+      "name": "28 St",
+      "secondary_name": "7 Av",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R18",
+      "name": "28 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "633",
+      "name": "28 St",
+      "secondary_name": "Park Av S",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R04",
+      "name": "30 Av",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "716",
+      "name": "33 St - Rawson St",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "632",
+      "name": "33 St",
+      "secondary_name": "Park Av S",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M34 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D17",
+      "name": "34 St - Herald Sq",
+      "secondary_name": "6 Av Line",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "R17"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M34 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to Platform for downtown B/D/F/M service",
+          "Mezzanine to Platform for uptown N/Q/R/W service"
+        ]
+      }
+    },
+    {
+      "id": "R17",
+      "name": "34 St - Herald Sq",
+      "secondary_name": "Broadway Line",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "D17"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M34 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to Platform for downtown B/D/F/M service",
+          "Mezzanine to Platform for uptown N/Q/R/W service"
+        ]
+      }
+    },
+    {
+      "id": "726",
+      "name": "34 St - Hudson Yards",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M34 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "128",
+      "name": "34 St - Penn Station",
+      "secondary_name": "7 Av",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ],
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M34 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        },
+        {
+          "name": "NJ Transit",
+          "mode": "train"
+        },
+        {
+          "name": "Amtrak",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Concourse level of Penn Station to Platform for 2/3 service in both directions"
+        ]
+      }
+    },
+    {
+      "id": "A28",
+      "name": "34 St - Penn Station",
+      "secondary_name": "8 Av",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M34 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        },
+        {
+          "name": "NJ Transit",
+          "mode": "train"
+        },
+        {
+          "name": "Amtrak",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R06",
+      "name": "36 Av",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R36",
+      "name": "36 St",
+      "secondary_name": "4 Av",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ],
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G20",
+      "name": "36 St",
+      "secondary_name": "Northern Blvd",
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R08",
+      "name": "39 Av",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "715",
+      "name": "40 St - Lowery St",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D16",
+      "name": "42 St - Bryant Pk",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "724",
+        "902",
+        "R16",
+        "127"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A27",
+      "name": "42 St - Port Authority Bus Terminal",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "127",
+        "725",
+        "902",
+        "R16"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Port Authority",
+          "mode": "bus"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R39",
+      "name": "45 St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "714",
+      "name": "46 St - Bliss St",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G18",
+      "name": "46 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D15",
+      "name": "47-50 Sts - Rockefeller Ctr",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R15",
+      "name": "49 St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "126",
+      "name": "50 St",
+      "secondary_name": "7 Av",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A25",
+      "name": "50 St",
+      "secondary_name": "8 Av",
+      "routes": {
+        "A": [
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "B14",
+      "name": "50 St",
+      "secondary_name": "New Utrecht Av",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "630",
+      "name": "51 St",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "F11"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "713",
+      "name": "52 St",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R40",
+      "name": "53 St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B15",
+      "name": "55 St",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B10",
+      "name": "57 St",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R14",
+      "name": "57 St - 7 Av",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A24",
+      "name": "59 St - Columbus Circle",
+      "secondary_name": "8 Av Line",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "125"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "125",
+      "name": "59 St - Columbus Circle",
+      "secondary_name": "Broadway–7 Av Line",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A24"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R41",
+      "name": "59 St",
+      "secondary_name": "4 Av",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "629",
+      "name": "59 St",
+      "secondary_name": "Lexington Av",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ],
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "B08",
+        "R11"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B16",
+      "name": "62 St",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "N04"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G10",
+      "name": "63 Dr - Rego Park",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q72 to LGA",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G15",
+      "name": "65 St",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "124",
+      "name": "66 St - Lincoln Center",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G09",
+      "name": "67 Av",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "628",
+      "name": "68 St - Hunter College",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "711",
+      "name": "69 St",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B17",
+      "name": "71 St",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "Q03",
+      "name": "72 St",
+      "secondary_name": "2 Av",
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M15 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "123",
+      "name": "72 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ],
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A22",
+      "name": "72 St",
+      "secondary_name": "Central Park W",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "710",
+      "name": "74 St - Broadway",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "G14"
+      ],
+      "bus_transfers": [
+        {
+          "route": "Q70 SBS to LGA",
+          "airport_connection": true,
+          "sbs": true
+        },
+        {
+          "route": "Q53 SBS",
+          "airport_connection": false,
+          "sbs": true
+        },
+        {
+          "route": "Q47 to LGA",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F07",
+      "name": "75 Av",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J17",
+      "name": "75 St - Elderts Ln",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R43",
+      "name": "77 St",
+      "secondary_name": "4 Av",
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "627",
+      "name": "77 St",
+      "secondary_name": "Lexington Av",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M79 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "122",
+      "name": "79 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M79 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B18",
+      "name": "79 St",
+      "secondary_name": "New Utrecht Av",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A59",
+      "name": "80 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A21",
+      "name": "81 St - Museum of Natural History",
+      "secondary_name": null,
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M79 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "709",
+      "name": "82 St - Jackson Hts",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J16",
+      "name": "85 St - Forest Pkwy",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "Q04",
+      "name": "86 St",
+      "secondary_name": "2 Av",
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M15 SBS",
+          "airport_connection": false,
+          "sbs": true
+        },
+        {
+          "route": "M86 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R44",
+      "name": "86 St",
+      "secondary_name": "4 Av",
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "S79 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Street to Mezzanine"
+        ]
+      }
+    },
+    {
+      "id": "121",
+      "name": "86 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M86 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A20",
+      "name": "86 St",
+      "secondary_name": "Central Park W",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M86 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "626",
+      "name": "86 St",
+      "secondary_name": "Lexington Av",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ],
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M86 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "N10",
+      "name": "86 St",
+      "secondary_name": "W 7 St",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A60",
+      "name": "88 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "708",
+      "name": "90 St - Elmhurst Av",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "Q05",
+      "name": "96 St",
+      "secondary_name": "2 Av",
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M15 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "120",
+      "name": "96 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ],
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Street to Northbound platform"
+        ]
+      }
+    },
+    {
+      "id": "A19",
+      "name": "96 St",
+      "secondary_name": "Central Park W",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "625",
+      "name": "96 St",
+      "secondary_name": "Lexington Av",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "706",
+      "name": "103 St - Corona Plaza",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "119",
+      "name": "103 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A18",
+      "name": "103 St",
+      "secondary_name": "Central Park W",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "624",
+      "name": "103 St",
+      "secondary_name": "Lexington Av",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J14",
+      "name": "104 St",
+      "secondary_name": "Jamaica Av",
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A63",
+      "name": "104 St",
+      "secondary_name": "Liberty Av",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "623",
+      "name": "110 St",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J13",
+      "name": "111 St",
+      "secondary_name": "Jamaica Av",
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A64",
+      "name": "111 St",
+      "secondary_name": "Liberty Av",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "705",
+      "name": "111 St",
+      "secondary_name": "Roosevelt Av",
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "117",
+      "name": "116 St - Columbia University",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M60 SBS to LGA",
+          "airport_connection": true,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A16",
+      "name": "116 St",
+      "secondary_name": "Central Park W",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "226",
+      "name": "116 St",
+      "secondary_name": "Lenox Av",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "622",
+      "name": "116 St",
+      "secondary_name": "Lexington Av",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J12",
+      "name": "121 St",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q10 to JFK",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "116",
+      "name": "125 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "225",
+      "name": "125 St",
+      "secondary_name": "Lenox Av",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M60 SBS to LGA",
+          "airport_connection": true,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "621",
+      "name": "125 St",
+      "secondary_name": "Lexington Av",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ],
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M60 SBS to LGA",
+          "airport_connection": true,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "Metro-North",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A15",
+      "name": "125 St",
+      "secondary_name": "St Nicholas Av",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M60 SBS to LGA",
+          "airport_connection": true,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "224",
+      "name": "135 St",
+      "secondary_name": "Lenox Av",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A14",
+      "name": "135 St",
+      "secondary_name": "St Nicholas Av",
+      "routes": {
+        "A": [
+          "north"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "D": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "115",
+      "name": "137 St - City College",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "416",
+      "name": "138 St - Grand Concourse",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "114",
+      "name": "145 St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "302",
+      "name": "145 St",
+      "secondary_name": "Lenox Av",
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D13",
+      "name": "145 St",
+      "secondary_name": "St Nicholas Av (Lower Level)",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A12"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A12",
+      "name": "145 St",
+      "secondary_name": "St Nicholas Av (Upper Level)",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "D13"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "222",
+      "name": "149 St - Grand Concourse",
+      "secondary_name": "Lower Level",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "415"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "415",
+      "name": "149 St - Grand Concourse",
+      "secondary_name": "Upper Level",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "222"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D12",
+      "name": "155 St",
+      "secondary_name": "Frederick Douglass Blvd",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A11",
+      "name": "155 St",
+      "secondary_name": "St Nicholas Av",
+      "routes": {
+        "A": [
+          "north"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx6 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "113",
+      "name": "157 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx6 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D11",
+      "name": "161 St - Yankee Stadium",
+      "secondary_name": "Concourse Line",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "414"
+      ],
+      "bus_transfers": [
+        {
+          "route": "Bx6 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to downtown D Platform",
+          "Mezzanine to Manhattan bound 4 line Platform"
+        ]
+      }
+    },
+    {
+      "id": "414",
+      "name": "161 St - Yankee Stadium",
+      "secondary_name": "Jerome Av Line",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "D11"
+      ],
+      "bus_transfers": [
+        {
+          "route": "Bx6 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to downtown D Platform",
+          "Mezzanine to Manhattan bound 4 line Platform"
+        ]
+      }
+    },
+    {
+      "id": "A10",
+      "name": "163 St - Amsterdam Av",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D10",
+      "name": "167 St",
+      "secondary_name": "Grand Concourse",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "413",
+      "name": "167 St",
+      "secondary_name": "River Av",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "112",
+      "name": "168 St - Washington Hts",
+      "secondary_name": "Broadway–7 Av Line",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A09"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A09",
+      "name": "168 St",
+      "secondary_name": "8 Av Line",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "112"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F02",
+      "name": "169 St",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D09",
+      "name": "170 St",
+      "secondary_name": "Grand Concourse",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "412",
+      "name": "170 St",
+      "secondary_name": "Jerome Av",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D08",
+      "name": "174-175 Sts",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "215",
+      "name": "174 St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A07",
+      "name": "175 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "GWB Bus Station",
+          "mode": "bus"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "177 St & Fort Washington Ave (NE corner) to Mezzanine for service in both directions",
+          "Mezzanine to Platform for uptown service"
+        ]
+      }
+    },
+    {
+      "id": "410",
+      "name": "176 St",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A06",
+      "name": "181 St",
+      "secondary_name": "Ft Washington Av",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "111",
+      "name": "181 St",
+      "secondary_name": "St Nicholas Av",
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D06",
+      "name": "182-183 Sts",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "408",
+      "name": "183 St",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A05",
+      "name": "190 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "110",
+      "name": "191 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "108",
+      "name": "207 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx12 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "107",
+      "name": "215 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "207",
+      "name": "219 St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "206",
+      "name": "225 St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "104",
+      "name": "231 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "205",
+      "name": "233 St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Metro-North",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to downtown Platform",
+          "Mezzanine to uptown Platform",
+          "Mezzanine to uptown Platform"
+        ]
+      }
+    },
+    {
+      "id": "103",
+      "name": "238 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J24",
+      "name": "Alabama Av",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "210",
+      "name": "Allerton Av",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S17",
+      "name": "Annadale",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H02",
+      "name": "Aqueduct - N Conduit Av",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H01",
+      "name": "Aqueduct Racetrack",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "S11",
+      "name": "Arthur Kill",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "636",
+      "name": "Astor Pl",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R03",
+      "name": "Astoria Blvd",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "M60 SBS to LGA",
+          "airport_connection": true,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R01",
+      "name": "Astoria - Ditmars Blvd",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S10",
+      "name": "Atlantic",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L24",
+      "name": "Atlantic Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "R31",
+      "name": "Atlantic Av - Barclays Ctr",
+      "secondary_name": "4 Av Line",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ],
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "235",
+        "D24"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "D24",
+      "name": "Atlantic Av - Barclays Ctr",
+      "secondary_name": "Brighton Line",
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "235",
+        "R31"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "235",
+      "name": "Atlantic Av - Barclays Ctr",
+      "secondary_name": "Eastern Pkwy Line",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ],
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "D24",
+        "R31"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "D32",
+      "name": "Avenue H",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F31",
+      "name": "Avenue I",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D33",
+      "name": "Avenue J",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D34",
+      "name": "Avenue M",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F33",
+      "name": "Avenue N",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F34",
+      "name": "Avenue P",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D37",
+      "name": "Avenue U",
+      "secondary_name": "E 16 St",
+      "routes": {
+        "Q": [
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F36",
+      "name": "Avenue U",
+      "secondary_name": "McDonald Av",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "N09",
+      "name": "Avenue U",
+      "secondary_name": "W 7 St",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F38",
+      "name": "Avenue X",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B23",
+      "name": "Bay 50 St",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B21",
+      "name": "Bay Pkwy",
+      "secondary_name": "86 St",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B82 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "N07",
+      "name": "Bay Pkwy",
+      "secondary_name": "Avenue O",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F32",
+      "name": "Bay Pkwy",
+      "secondary_name": "McDonald Av",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R45",
+      "name": "Bay Ridge - 95 St",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R42",
+      "name": "Bay Ridge Av",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S20",
+      "name": "Bay Terrace",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "502",
+      "name": "Baychester Av",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H10",
+      "name": "Beach 25 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H09",
+      "name": "Beach 36 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H08",
+      "name": "Beach 44 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H07",
+      "name": "Beach 60 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H06",
+      "name": "Beach 67 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q52 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H12",
+      "name": "Beach 90 St",
+      "secondary_name": null,
+      "routes": {
+        "H": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q52 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H13",
+      "name": "Beach 98 St",
+      "secondary_name": null,
+      "routes": {
+        "H": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H14",
+      "name": "Beach 105 St",
+      "secondary_name": null,
+      "routes": {
+        "H": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L08",
+      "name": "Bedford Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G33",
+      "name": "Bedford - Nostrand Avs",
+      "secondary_name": null,
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D03",
+      "name": "Bedford Park Blvd",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "405",
+      "name": "Bedford Park Blvd - Lehman College",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "236",
+      "name": "Bergen St",
+      "secondary_name": "Flatbush Av",
+      "routes": {
+        "2": [
+          "south"
+        ],
+        "3": [
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F20",
+      "name": "Bergen St",
+      "secondary_name": "Smith St",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D29",
+      "name": "Beverley Rd",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "245",
+      "name": "Beverly Rd",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "637",
+      "name": "Bleecker St",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "D21"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Houston St & Lafayette St (NW corner) to downtown 6 Platform and access to rest of complex"
+        ]
+      }
+    },
+    {
+      "id": "232",
+      "name": "Borough Hall",
+      "secondary_name": "7 Av Line",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "423",
+        "R28"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "423",
+      "name": "Borough Hall",
+      "secondary_name": "Lexington Av Line",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "232",
+        "R28"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "S04",
+      "name": "Botanic Garden",
+      "secondary_name": null,
+      "routes": {
+        "FS": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "239"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M19",
+      "name": "Bowery",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "420",
+      "name": "Bowling Green",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "SI Ferry",
+          "mode": "ship"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F05",
+      "name": "Briarwood - Van Wyck Blvd",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D40",
+      "name": "Brighton Beach",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H04",
+      "name": "Broad Channel",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "H": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M23",
+      "name": "Broad St",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L22",
+      "name": "Broadway Jct",
+      "secondary_name": "Canarsie Line",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A51",
+        "J27"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A51",
+      "name": "Broadway Jct",
+      "secondary_name": "Fulton St Line",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "J27",
+        "L22"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "J27",
+      "name": "Broadway Jct",
+      "secondary_name": "Jamaica Line",
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A51",
+        "L22"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D21",
+      "name": "Broadway-Lafayette St",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "637"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Houston St & Lafayette St (NW corner) to downtown 6 Platform and access to rest of complex"
+        ]
+      }
+    },
+    {
+      "id": "R05",
+      "name": "Broadway",
+      "secondary_name": "31 St",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G30",
+      "name": "Broadway",
+      "secondary_name": "Union Av",
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "212",
+      "name": "Bronx Park East",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "618",
+      "name": "Brook Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "640",
+      "name": "Brooklyn Bridge - City Hall",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ],
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "M21"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "602",
+      "name": "Buhre Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "209",
+      "name": "Burke Av",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "409",
+      "name": "Burnside Av",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L21",
+      "name": "Bushwick Av - Aberdeen St",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A34",
+      "name": "Canal St",
+      "secondary_name": "6 Av",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "Q01",
+      "name": "Canal St",
+      "secondary_name": "Broadway (Lower Level)",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "639",
+        "M20",
+        "R23"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R23",
+      "name": "Canal St",
+      "secondary_name": "Broadway (Upper Level)",
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "639",
+        "M20",
+        "Q01"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M20",
+      "name": "Canal St",
+      "secondary_name": "Centre St",
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "639",
+        "Q01",
+        "R23"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "639",
+      "name": "Canal St",
+      "secondary_name": "Lafayette St",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "M20",
+        "Q01",
+        "R23"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "135",
+      "name": "Canal St",
+      "secondary_name": "Varick St",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L29",
+      "name": "Canarsie - Rockaway Pkwy",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B82 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F21",
+      "name": "Carroll St",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "607",
+      "name": "Castle Hill Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "118",
+      "name": "Cathedral Pkwy (110 St)",
+      "secondary_name": "Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A17",
+      "name": "Cathedral Pkwy (110 St)",
+      "secondary_name": "Frederick Douglass Blvd",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M10",
+      "name": "Central Av",
+      "secondary_name": null,
+      "routes": {
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "227",
+      "name": "Central Park North (110 St)",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M21",
+      "name": "Chambers St",
+      "secondary_name": "Centre St",
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "640"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A36",
+      "name": "Chambers St",
+      "secondary_name": "Church St",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "228",
+        "E01",
+        "R25"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "137",
+      "name": "Chambers St",
+      "secondary_name": "West Broadway",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ],
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "J28",
+      "name": "Chauncey St",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "133",
+      "name": "Christopher St - Sheridan Sq",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D28",
+      "name": "Church Av",
+      "secondary_name": "E 18 St",
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F27",
+      "name": "Church Av",
+      "secondary_name": "McDonald Av",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "244",
+      "name": "Church Av",
+      "secondary_name": "Nostrand Av",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R24",
+      "name": "City Hall",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "231",
+      "name": "Clark St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G34",
+      "name": "Classon Av",
+      "secondary_name": null,
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J22",
+      "name": "Cleveland St",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S28",
+      "name": "Clifton",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A44",
+      "name": "Clinton - Washington Avs",
+      "secondary_name": "Fulton St",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G35",
+      "name": "Clinton - Washington Avs",
+      "secondary_name": "Lafayette Av",
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D43",
+      "name": "Coney Island - Stillwell Av",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "D30",
+      "name": "Cortelyou Rd",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R25",
+      "name": "Cortlandt St",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "E01",
+        "A36",
+        "228"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F09",
+      "name": "Court Sq",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "719",
+        "G22"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G22",
+      "name": "Court Sq",
+      "secondary_name": "Crosstown Line",
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "719",
+        "F09"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "719",
+      "name": "Court Sq",
+      "secondary_name": "Flushing Line",
+      "routes": {},
+      "transfers": [
+        "F09",
+        "G22"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R28",
+      "name": "Court St",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "232",
+        "423"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J20",
+      "name": "Crescent St",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "250",
+      "name": "Crown Hts - Utica Av",
+      "secondary_name": null,
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ],
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B46 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Utica Ave & Eastern Pkwy to Mezzanine for service in both directions"
+        ]
+      }
+    },
+    {
+      "id": "617",
+      "name": "Cypress Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J19",
+      "name": "Cypress Hills",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R30",
+      "name": "DeKalb Av",
+      "secondary_name": "Flatbush Av Ext",
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "L16",
+      "name": "DeKalb Av",
+      "secondary_name": "Wyckoff Av",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F15",
+      "name": "Delancey St",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "M18"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M14A SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F29",
+      "name": "Ditmas Av",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S25",
+      "name": "Dongan Hills",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A03",
+      "name": "Dyckman St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "109",
+      "name": "Dyckman St",
+      "secondary_name": "Nagle Av",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "L28",
+      "name": "E 105 St",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "616",
+      "name": "E 143 St - St Mary's St",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "615",
+      "name": "E 149 St",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "213",
+      "name": "E 180 St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F16",
+      "name": "East Broadway",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "501",
+      "name": "Eastchester - Dyre Av",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "238",
+      "name": "Eastern Pkwy - Brooklyn Museum",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "south"
+        ],
+        "3": [
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "611",
+      "name": "Elder Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G13",
+      "name": "Elmhurst Av",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S18",
+      "name": "Eltingville",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "S79 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M18",
+      "name": "Essex St",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ],
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "F15"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M14A SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A55",
+      "name": "Euclid Av",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "H11",
+      "name": "Far Rockaway - Mott Av",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "247",
+      "name": "Flatbush Av - Brooklyn College",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Nostrand Ave & Flatbush Ave (SE corner) to Platform for service in both directions"
+        ]
+      }
+    },
+    {
+      "id": "M12",
+      "name": "Flushing Av",
+      "secondary_name": "Broadway",
+      "routes": {
+        "J": [
+          "south"
+        ],
+        "M": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G31",
+      "name": "Flushing Av",
+      "secondary_name": "Union Av",
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "701",
+      "name": "Flushing - Main St",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        },
+        {
+          "route": "Q48 to LGA",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "D05",
+      "name": "Fordham Rd",
+      "secondary_name": "Grand Concourse",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx12 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "407",
+      "name": "Fordham Rd",
+      "secondary_name": "Jerome Av",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx12 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "M05",
+      "name": "Forest Av",
+      "secondary_name": null,
+      "routes": {
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G08",
+      "name": "Forest Hills - 71 Av",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "N03",
+      "name": "Fort Hamilton Pkwy",
+      "secondary_name": "62 St",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B13",
+      "name": "Fort Hamilton Pkwy",
+      "secondary_name": "New Utrecht Av",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F26",
+      "name": "Fort Hamilton Pkwy",
+      "secondary_name": "Prospect Av",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "239",
+      "name": "Franklin Av - Medgar Evers College",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ],
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "S04"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A45",
+      "name": "Franklin Av",
+      "secondary_name": "Fulton St",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "S01"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "S01",
+      "name": "Franklin Av",
+      "secondary_name": "Shuttle",
+      "routes": {
+        "FS": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A45"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "136",
+      "name": "Franklin St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "216",
+      "name": "Freeman St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M04",
+      "name": "Fresh Pond Rd",
+      "secondary_name": null,
+      "routes": {
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "229",
+      "name": "Fulton St",
+      "secondary_name": "Bway-Nassau St (7 Av)",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "418",
+        "A38",
+        "M22"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A38",
+      "name": "Fulton St",
+      "secondary_name": "Bway-Nassau St (8 Av)",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "229",
+        "418",
+        "M22"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "418",
+      "name": "Fulton St",
+      "secondary_name": "Bway-Nassau St (Lex Av)",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "229",
+        "A38",
+        "M22"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "M22",
+      "name": "Fulton St",
+      "secondary_name": "Bway-Nassau St (Nassau St)",
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "229",
+        "418",
+        "A38"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G36",
+      "name": "Fulton St",
+      "secondary_name": "Lafayette Av",
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J30",
+      "name": "Gates Av",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L11",
+      "name": "Graham Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "237",
+      "name": "Grand Army Plaza",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "south"
+        ],
+        "3": [
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G12",
+      "name": "Grand Av - Newtown",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q53 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "901",
+      "name": "Grand Central - 42 St",
+      "secondary_name": "42 St Shuttle",
+      "routes": {
+        "GS": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "631",
+        "723"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Metro-North",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "723",
+      "name": "Grand Central - 42 St",
+      "secondary_name": "Flushing Line",
+      "routes": {},
+      "transfers": [
+        "631",
+        "901"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Metro-North",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to Platform for 7 train service in both directions",
+          "Mezzanine to Platform for uptown 4/5/6 service"
+        ]
+      }
+    },
+    {
+      "id": "631",
+      "name": "Grand Central - 42 St",
+      "secondary_name": "Lexington Av Line",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ],
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "723",
+        "901"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Metro-North",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to Platform for 7 train service in both directions",
+          "Mezzanine to Platform for uptown 4/5/6 service"
+        ]
+      }
+    },
+    {
+      "id": "L12",
+      "name": "Grand St",
+      "secondary_name": "Bushwick Av",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D22",
+      "name": "Grand St",
+      "secondary_name": "Chrystie St",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A57",
+      "name": "Grant Av",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S23",
+      "name": "Grant City",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S27",
+      "name": "Grasmere",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S19",
+      "name": "Great Kills",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G26",
+      "name": "Greenpoint Av",
+      "secondary_name": null,
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "503",
+      "name": "Gun Hill Rd",
+      "secondary_name": "Seymour Av",
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "208",
+      "name": "Gun Hill Rd",
+      "secondary_name": "White Plains Rd",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx41 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Gun Hill Rd to downtown Platform"
+        ]
+      }
+    },
+    {
+      "id": "J29",
+      "name": "Halsey St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L19",
+      "name": "Halsey St",
+      "secondary_name": "Wyckoff Av",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "301",
+      "name": "Harlem - 148 St",
+      "secondary_name": null,
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M14",
+      "name": "Hewes St",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "south"
+        ],
+        "M": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A40",
+      "name": "High St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "134",
+      "name": "Houston St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H03",
+      "name": "Howard Beach - JFK Airport",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "JFK AirTrain",
+          "mode": "plane"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A42",
+      "name": "Hoyt - Schermerhorn Sts",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "233",
+      "name": "Hoyt St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S16",
+      "name": "Huguenot",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "720",
+      "name": "Hunters Point Av",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "613",
+      "name": "Hunts Point Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx6 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "218",
+      "name": "Intervale Av",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx6 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A02",
+      "name": "Inwood - 207 St",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx12 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "220",
+      "name": "Jackson Av",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G14",
+      "name": "Jackson Hts - Roosevelt Av",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "710"
+      ],
+      "bus_transfers": [
+        {
+          "route": "Q70 SBS to LGA",
+          "airport_connection": true,
+          "sbs": true
+        },
+        {
+          "route": "Q53 SBS",
+          "airport_connection": false,
+          "sbs": true
+        },
+        {
+          "route": "Q47 to LGA",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F01",
+      "name": "Jamaica - 179 St",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q3 to JFK",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G05",
+      "name": "Jamaica Center - Parsons/Archer",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Archer Ave & Parsons Blvd (SW corner) to Mezzanine for service in both directions on both lines",
+          "Mezzanine to Platform for service on both lines"
+        ]
+      }
+    },
+    {
+      "id": "G07",
+      "name": "Jamaica - Van Wyck",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R29",
+      "name": "Jay St - MetroTech",
+      "secondary_name": "4 Av Line",
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A41"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to Platform for Manhattan-bound A/C/F service"
+        ]
+      }
+    },
+    {
+      "id": "A41",
+      "name": "Jay St - MetroTech",
+      "secondary_name": "Fulton St & Culver Lines",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "R29"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to Platform for Manhattan-bound A/C/F service"
+        ]
+      }
+    },
+    {
+      "id": "S24",
+      "name": "Jefferson Av",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L15",
+      "name": "Jefferson St",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "707",
+      "name": "Junction Blvd",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q72 to LGA",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Roosevelt Ave & Junction Blvd (NE corner) to Mezzanine for service in both directions"
+        ]
+      }
+    },
+    {
+      "id": "254",
+      "name": "Junius St",
+      "secondary_name": null,
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "L26"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F06",
+      "name": "Kew Gardens - Union Tpke",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q10 to JFK",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "D35",
+      "name": "Kings Hwy",
+      "secondary_name": "E 16 St",
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B82 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F35",
+      "name": "Kings Hwy",
+      "secondary_name": "McDonald Av",
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B82 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "N08",
+      "name": "Kings Hwy",
+      "secondary_name": "W 7 St",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B82 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D04",
+      "name": "Kingsbridge Rd",
+      "secondary_name": "Grand Concourse",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "406",
+      "name": "Kingsbridge Rd",
+      "secondary_name": "Jerome Av",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "249",
+      "name": "Kingston Av",
+      "secondary_name": null,
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A47",
+      "name": "Kingston - Throop Avs",
+      "secondary_name": null,
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M09",
+      "name": "Knickerbocker Av",
+      "secondary_name": null,
+      "routes": {
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J31",
+      "name": "Kosciuszko St",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B46 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A43",
+      "name": "Lafayette Av",
+      "secondary_name": null,
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F11",
+      "name": "Lexington Av/53 St",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "630"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R11",
+      "name": "Lexington Av/59 St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "629",
+        "B08"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "B08",
+      "name": "Lexington Av/63 St",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "629",
+        "R11"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A52",
+      "name": "Liberty Av",
+      "secondary_name": null,
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L26",
+      "name": "Livonia Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "254"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "614",
+      "name": "Longwood Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M13",
+      "name": "Lorimer St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "J": [
+          "south"
+        ],
+        "M": [
+          "north"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L10",
+      "name": "Lorimer St",
+      "secondary_name": "Metropolitan Av",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "G29"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "106",
+      "name": "Marble Hill - 225 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Metro-North",
+          "mode": "train"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "M16",
+      "name": "Marcy Av",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ],
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G29",
+      "name": "Metropolitan Av",
+      "secondary_name": null,
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "L10"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "702",
+      "name": "Mets - Willets Point",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q48 to LGA",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M01",
+      "name": "Middle Village - Metropolitan Av",
+      "secondary_name": null,
+      "routes": {
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "603",
+      "name": "Middletown Rd",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L13",
+      "name": "Montrose Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L14",
+      "name": "Morgan Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "505",
+      "name": "Morris Park",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "610",
+      "name": "Morrison Av - Sound View",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "402",
+      "name": "Mosholu Pkwy",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "411",
+      "name": "Mt Eden Av",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M11",
+      "name": "Myrtle Av",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ],
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G32",
+      "name": "Myrtle - Willoughby Avs",
+      "secondary_name": null,
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L17",
+      "name": "Myrtle - Wyckoff Avs",
+      "secondary_name": "Canarsie Line",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "M08"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "M08",
+      "name": "Myrtle - Wyckoff Avs",
+      "secondary_name": "Myrtle Av Line",
+      "routes": {
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "L17"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "S12",
+      "name": "Nassau",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G28",
+      "name": "Nassau Av",
+      "secondary_name": null,
+      "routes": {
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D38",
+      "name": "Neck Rd",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F39",
+      "name": "Neptune Av",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "204",
+      "name": "Nereid Av",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "234",
+      "name": "Nevins St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ],
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S22",
+      "name": "New Dorp",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "257",
+      "name": "New Lots Av",
+      "secondary_name": "Livonia Av",
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B15 to JFK",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L27",
+      "name": "New Lots Av",
+      "secondary_name": "Van Sinderen Av",
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B15 to JFK",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "N04",
+      "name": "New Utrecht Av",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "B16"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "246",
+      "name": "Newkirk Av",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D31",
+      "name": "Newkirk Plaza",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G16",
+      "name": "Northern Blvd",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D01",
+      "name": "Norwood - 205 St",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J21",
+      "name": "Norwood Av",
+      "secondary_name": null,
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "248",
+      "name": "Nostrand Av",
+      "secondary_name": "Eastern Pkwy",
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A46",
+      "name": "Nostrand Av",
+      "secondary_name": "Fulton St",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "S21",
+      "name": "Oakwood Heights",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D41",
+      "name": "Ocean Pkwy",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S26",
+      "name": "Old Town",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A65",
+      "name": "Ozone Park - Lefferts Blvd",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q10 to JFK",
+          "airport_connection": true,
+          "sbs": false
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "228",
+      "name": "Park Pl",
+      "secondary_name": "Broadway",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A36",
+        "E01",
+        "R25"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "S03",
+      "name": "Park Pl",
+      "secondary_name": "Franklin Av",
+      "routes": {
+        "FS": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "608",
+      "name": "Parkchester",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D27",
+      "name": "Parkside Av",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F03",
+      "name": "Parsons Blvd",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "601",
+      "name": "Pelham Bay Park",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx12 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to Platform for Manhattan bound service"
+        ]
+      }
+    },
+    {
+      "id": "504",
+      "name": "Pelham Pkwy",
+      "secondary_name": "Esplanade",
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx12 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "211",
+      "name": "Pelham Pkwy",
+      "secondary_name": "White Plains Rd",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Bx12 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Mezzanine to Platform for Manhattan bound service",
+          "Mezzanine to Platform for Wakefield 241 St bound service"
+        ]
+      }
+    },
+    {
+      "id": "255",
+      "name": "Pennsylvania Av",
+      "secondary_name": null,
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S14",
+      "name": "Pleasant Plains",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "241",
+      "name": "President St - Medgar Evers College",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R22",
+      "name": "Prince St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S15",
+      "name": "Prince's Bay",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R34",
+      "name": "Prospect Av",
+      "secondary_name": "4 Av",
+      "routes": {
+        "N": [
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "219",
+      "name": "Prospect Av",
+      "secondary_name": "Westchester Av",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D26",
+      "name": "Prospect Park",
+      "secondary_name": null,
+      "routes": {
+        "FS": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "G21",
+      "name": "Queens Plaza",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R09",
+      "name": "Queensboro Plaza",
+      "secondary_name": "Astoria Line",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "718"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "718",
+      "name": "Queensboro Plaza",
+      "secondary_name": "Flushing Line",
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "R09"
+      ],
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A49",
+      "name": "Ralph Av",
+      "secondary_name": null,
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "139",
+      "name": "Rector St",
+      "secondary_name": "Greenwich St",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R26",
+      "name": "Rector St",
+      "secondary_name": "Trinity Pl",
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S13",
+      "name": "Richmond Valley",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A50",
+      "name": "Rockaway Av",
+      "secondary_name": "Fulton St",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "253",
+      "name": "Rockaway Av",
+      "secondary_name": "Livonia Av",
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A61",
+      "name": "Rockaway Blvd",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q52 SBS",
+          "airport_connection": false,
+          "sbs": true
+        },
+        {
+          "route": "Q53 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "H15",
+      "name": "Rockaway Park - Beach 116 St",
+      "secondary_name": null,
+      "routes": {
+        "H": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q53 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "B06",
+      "name": "Roosevelt Island",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "West Rd entrance to Platform for downtown and Brooklyn service"
+        ]
+      }
+    },
+    {
+      "id": "252",
+      "name": "Saratoga Av",
+      "secondary_name": null,
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "M06",
+      "name": "Seneca Av",
+      "secondary_name": null,
+      "routes": {
+        "M": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D39",
+      "name": "Sheepshead Bay",
+      "secondary_name": null,
+      "routes": {
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A54",
+      "name": "Shepherd Av",
+      "secondary_name": null,
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "217",
+      "name": "Simpson St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F22",
+      "name": "Smith - 9 Sts",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "G": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "142",
+      "name": "South Ferry",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "R27"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M15 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "SI Ferry",
+          "mode": "ship"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "A33",
+      "name": "Spring St",
+      "secondary_name": "6 Av",
+      "routes": {
+        "A": [
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "638",
+      "name": "Spring St",
+      "secondary_name": "Lafayette St",
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S31",
+      "name": "St George",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "SI Ferry",
+          "mode": "ship"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "609",
+      "name": "St Lawrence Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S29",
+      "name": "Stapleton",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G19",
+      "name": "Steinway St",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "242",
+      "name": "Sterling St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "F04",
+      "name": "Sutphin Blvd",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G06",
+      "name": "Sutphin Blvd - Archer Av - JFK Airport",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        },
+        {
+          "name": "JFK AirTrain",
+          "mode": "plane"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "L25",
+      "name": "Sutter Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "251",
+      "name": "Sutter Av - Rutland Rd",
+      "secondary_name": null,
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "127",
+      "name": "Times Sq - 42 St",
+      "secondary_name": "7 Av Line",
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ],
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "725",
+        "902",
+        "A27",
+        "R16",
+        "D16"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Port Authority",
+          "mode": "bus"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "902",
+      "name": "Times Sq - 42 St",
+      "secondary_name": "42 St Shuttle",
+      "routes": {
+        "GS": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "127",
+        "725",
+        "A27",
+        "R16",
+        "D16"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Port Authority",
+          "mode": "bus"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "R16",
+      "name": "Times Sq - 42 St",
+      "secondary_name": "Broadway Line",
+      "routes": {
+        "N": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "127",
+        "725",
+        "902",
+        "A27",
+        "D16"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Port Authority",
+          "mode": "bus"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "725",
+      "name": "Times Sq - 42 St",
+      "secondary_name": "Flushing Line",
+      "routes": {},
+      "transfers": [
+        "127",
+        "902",
+        "A27",
+        "R16"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "Port Authority",
+          "mode": "bus"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "S30",
+      "name": "Tompkinsville",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "S09",
+      "name": "Tottenville",
+      "secondary_name": null,
+      "routes": {
+        "SI": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "D07",
+      "name": "Tremont Av",
+      "secondary_name": null,
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R32",
+      "name": "Union St",
+      "secondary_name": null,
+      "routes": {
+        "N": [
+          "south"
+        ],
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A48",
+      "name": "Utica Av",
+      "secondary_name": null,
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "B46 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "101",
+      "name": "Van Cortlandt Park - 242 St",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J23",
+      "name": "Van Siclen Av",
+      "secondary_name": "Fulton St",
+      "routes": {
+        "J": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "256",
+      "name": "Van Siclen Av",
+      "secondary_name": "Livonia Av",
+      "routes": {
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "A53",
+      "name": "Van Siclen Av",
+      "secondary_name": "Pitkin Av",
+      "routes": {
+        "C": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "721",
+      "name": "Vernon Blvd - Jackson Av",
+      "secondary_name": null,
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "D20",
+      "name": "W 4 St - Washington Sq",
+      "secondary_name": "Lower Level",
+      "routes": {
+        "D": [
+          "north",
+          "south"
+        ],
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "A32"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "W 3rd St & 6th Ave (NE corner) to turnstiles for A/C/E and B/D/F/M service"
+        ]
+      }
+    },
+    {
+      "id": "A32",
+      "name": "W 4 St - Washington Sq",
+      "secondary_name": "Upper Level",
+      "routes": {
+        "A": [
+          "north",
+          "south"
+        ],
+        "C": [
+          "north",
+          "south"
+        ],
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "D20"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "W 3rd St & 6th Ave (NE corner) to turnstiles for A/C/E and B/D/F/M service"
+        ]
+      }
+    },
+    {
+      "id": "D42",
+      "name": "W 8 St - NY Aquarium",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ],
+        "Q": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "138",
+      "name": "WTC Cortlandt",
+      "secondary_name": null,
+      "routes": {
+        "1": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": [
+          "Street to Southbound platform"
+        ]
+      }
+    },
+    {
+      "id": "201",
+      "name": "Wakefield - 241 St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "419",
+      "name": "Wall St",
+      "secondary_name": "Broadway",
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "230",
+      "name": "Wall St",
+      "secondary_name": "William St",
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "3": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "214",
+      "name": "West Farms Sq - E Tremont Av",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ],
+        "5": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q44 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "604",
+      "name": "Westchester Sq - E Tremont Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "R27",
+      "name": "Whitehall St - South Ferry",
+      "secondary_name": null,
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "142"
+      ],
+      "bus_transfers": [
+        {
+          "route": "M15 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "SI Ferry",
+          "mode": "ship"
+        }
+      ],
+      "accessibility": null
+    },
+    {
+      "id": "612",
+      "name": "Whitlock Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "L20",
+      "name": "Wilson Av",
+      "secondary_name": null,
+      "routes": {
+        "L": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": {
+        "directions": [
+          "north"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "243",
+      "name": "Winthrop St",
+      "secondary_name": null,
+      "routes": {
+        "2": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "J15",
+      "name": "Woodhaven Blvd",
+      "secondary_name": "Jamaica Av",
+      "routes": {},
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q52 SBS",
+          "airport_connection": false,
+          "sbs": true
+        },
+        {
+          "route": "Q53 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "G11",
+      "name": "Woodhaven Blvd",
+      "secondary_name": "Queens Blvd",
+      "routes": {
+        "R": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q53 SBS",
+          "airport_connection": false,
+          "sbs": true
+        },
+        {
+          "route": "Q52 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "401",
+      "name": "Woodlawn",
+      "secondary_name": null,
+      "routes": {
+        "4": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "712",
+      "name": "Woodside - 61 St",
+      "secondary_name": null,
+      "routes": {
+        "7": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": [
+        {
+          "route": "Q70 SBS to LGA",
+          "airport_connection": true,
+          "sbs": true
+        },
+        {
+          "route": "Q53 SBS",
+          "airport_connection": false,
+          "sbs": true
+        }
+      ],
+      "connections": [
+        {
+          "name": "LIRR",
+          "mode": "train"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "E01",
+      "name": "World Trade Center",
+      "secondary_name": null,
+      "routes": {
+        "E": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": [
+        "228",
+        "A36",
+        "R25"
+      ],
+      "bus_transfers": null,
+      "connections": [
+        {
+          "name": "PATH",
+          "mode": "subway"
+        }
+      ],
+      "accessibility": {
+        "directions": [
+          "north",
+          "south"
+        ],
+        "advisories": []
+      }
+    },
+    {
+      "id": "F18",
+      "name": "York St",
+      "secondary_name": null,
+      "routes": {
+        "F": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    },
+    {
+      "id": "606",
+      "name": "Zerega Av",
+      "secondary_name": null,
+      "routes": {
+        "6": [
+          "north",
+          "south"
+        ]
+      },
+      "transfers": null,
+      "bus_transfers": null,
+      "connections": null,
+      "accessibility": null
+    }
+  ],
+  "timestamp": 1635694384
+}
