@@ -27,6 +27,7 @@
 		3DF62F7B272EEE370053D299 /* stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62F7A272EEE370053D299 /* stops.json */; };
 		3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F7C27337C340053D299 /* RoutesResponse.swift */; };
 		3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F7E27337F670053D299 /* StopsResponse.swift */; };
+		3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F80273382580053D299 /* GoodServiceError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		3DF62F7A272EEE370053D299 /* stops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stops.json; sourceTree = "<group>"; };
 		3DF62F7C27337C340053D299 /* RoutesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesResponse.swift; sourceTree = "<group>"; };
 		3DF62F7E27337F670053D299 /* StopsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsResponse.swift; sourceTree = "<group>"; };
+		3DF62F80273382580053D299 /* GoodServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */,
 				3DF62F7C27337C340053D299 /* RoutesResponse.swift */,
 				3DF62F7E27337F670053D299 /* StopsResponse.swift */,
+				3DF62F80273382580053D299 /* GoodServiceError.swift */,
 			);
 			path = GoodServiceAPI;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				3D2D1A21272DC04A008BF58D /* GoodServiceIO_Simple.xcdatamodeld in Sources */,
 				3DF62F77272EEDE00053D299 /* TestData.swift in Sources */,
 				3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */,
+				3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */,
 				3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */,
 				3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */,
 				3D2D1A25272DC04A008BF58D /* ContentView.swift in Sources */,
