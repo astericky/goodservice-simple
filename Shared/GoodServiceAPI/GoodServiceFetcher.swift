@@ -22,6 +22,9 @@ class GoodServiceFetcher {
 }
 
 extension GoodServiceFetcher: GoodServiceFetchable {
+    static let routesURLDev = load("routes.json")
+    static let stopsURLDev = load("stops.json")
+    
     static let routesURL = "https://goodservice.io/api/routes"
     static let stopsURL = "https://goodservice.io/api/stops"
 }

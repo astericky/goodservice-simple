@@ -25,6 +25,8 @@
 		3DF62F77272EEDE00053D299 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F76272EEDE00053D299 /* TestData.swift */; };
 		3DF62F79272EEE230053D299 /* routes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62F78272EEE230053D299 /* routes.json */; };
 		3DF62F7B272EEE370053D299 /* stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62F7A272EEE370053D299 /* stops.json */; };
+		3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F7C27337C340053D299 /* RoutesResponse.swift */; };
+		3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F7E27337F670053D299 /* StopsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		3DF62F76272EEDE00053D299 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		3DF62F78272EEE230053D299 /* routes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = routes.json; sourceTree = "<group>"; };
 		3DF62F7A272EEE370053D299 /* stops.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stops.json; sourceTree = "<group>"; };
+		3DF62F7C27337C340053D299 /* RoutesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesResponse.swift; sourceTree = "<group>"; };
+		3DF62F7E27337F670053D299 /* StopsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */,
+				3DF62F7C27337C340053D299 /* RoutesResponse.swift */,
+				3DF62F7E27337F670053D299 /* StopsResponse.swift */,
 			);
 			path = GoodServiceAPI;
 			sourceTree = "<group>";
@@ -342,6 +348,8 @@
 				3D2D1A21272DC04A008BF58D /* GoodServiceIO_Simple.xcdatamodeld in Sources */,
 				3DF62F77272EEDE00053D299 /* TestData.swift in Sources */,
 				3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */,
+				3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */,
+				3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */,
 				3D2D1A25272DC04A008BF58D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
