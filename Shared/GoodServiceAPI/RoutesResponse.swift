@@ -17,7 +17,7 @@ struct Route: Codable {
     let visible: Bool
     let scheduled: Bool
     
-    enum CodingKeys: String, CodingKeys {
+    enum CodingKeys: String, CodingKey {
         case id
         case name
         case color
@@ -39,7 +39,7 @@ struct RoutesResponse: Codable {
     let timestamp: Int
     let blogPost: BlogPost
     
-    enum CodingKeys: String, CodingKeys {
+    enum CodingKeys: String, CodingKey {
         case routes
         case timestamp
         case blogPost = "blog_post"
