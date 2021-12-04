@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3D20AD1A274C65B200DC288E /* RouteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD19274C65B200DC288E /* RouteListView.swift */; };
 		3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */; };
+		3D20AD2027542B4300DC288E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD1F27542B4300DC288E /* Extensions.swift */; };
+		3D20AD2227543E6800DC288E /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD2127543E6800DC288E /* RouteViewModel.swift */; };
 		3D2D1A12272DC04A008BF58D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D1A11272DC04A008BF58D /* Tests_iOS.swift */; };
 		3D2D1A14272DC04A008BF58D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D1A13272DC04A008BF58D /* Tests_iOSLaunchTests.swift */; };
 		3D2D1A1E272DC04A008BF58D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D1A1D272DC04A008BF58D /* Tests_macOS.swift */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		3D20AD19274C65B200DC288E /* RouteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListView.swift; sourceTree = "<group>"; };
 		3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceViewModel.swift; sourceTree = "<group>"; };
+		3D20AD1F27542B4300DC288E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3D20AD2127543E6800DC288E /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
 		3D2D19F7272DC049008BF58D /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		3D2D19F8272DC049008BF58D /* GoodServiceIO_SimpleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceIO_SimpleApp.swift; sourceTree = "<group>"; };
 		3D2D19F9272DC049008BF58D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -128,8 +132,17 @@
 			isa = PBXGroup;
 			children = (
 				3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */,
+				3D20AD2127543E6800DC288E /* RouteViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3D20AD1E27542B3800DC288E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				3D20AD1F27542B4300DC288E /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		3D2D19F0272DC049008BF58D = {
@@ -154,6 +167,7 @@
 				3D2D19FA272DC049008BF58D /* Persistence.swift */,
 				3D20AD1B274C65CF00DC288E /* ViewModels */,
 				3DF62F72272EEB830053D299 /* GoodServiceAPI */,
+				3D20AD1E27542B3800DC288E /* Utils */,
 				3DF62F75272EEDB80053D299 /* PreviewData */,
 				3D2D19FB272DC04A008BF58D /* Assets.xcassets */,
 				3D2D19F6272DC049008BF58D /* GoodServiceIO_Simple.xcdatamodeld */,
@@ -381,12 +395,14 @@
 			files = (
 				3D2D1A23272DC04A008BF58D /* GoodServiceIO_SimpleApp.swift in Sources */,
 				3D2D1A27272DC04A008BF58D /* Persistence.swift in Sources */,
+				3D20AD2227543E6800DC288E /* RouteViewModel.swift in Sources */,
 				3D2D1A21272DC04A008BF58D /* GoodServiceIO_Simple.xcdatamodeld in Sources */,
 				3D20AD1A274C65B200DC288E /* RouteListView.swift in Sources */,
 				3DF62F8327383FBD0053D299 /* TabContentView.swift in Sources */,
 				3DF62F77272EEDE00053D299 /* TestData.swift in Sources */,
 				3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */,
 				3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */,
+				3D20AD2027542B4300DC288E /* Extensions.swift in Sources */,
 				3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */,
 				3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */,
 				3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */,
