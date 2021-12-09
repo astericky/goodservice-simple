@@ -8,7 +8,7 @@
 import SwiftUI
 import WrappingHStack
 
-struct RouteListView: View {
+struct HorizontalRouteListView: View {
     var routes = [RouteViewModel]()
 
     var body: some View {
@@ -23,7 +23,7 @@ struct RouteListView: View {
     }
 }
 
-struct RouteListView_Previews: PreviewProvider {
+struct HorizontalRouteListView_Previews: PreviewProvider {
     static var routes = [
         RouteViewModel(route: routeA),
         RouteViewModel(route: route1),
@@ -43,6 +43,6 @@ struct RouteListView_Previews: PreviewProvider {
         RouteViewModel(route: routeS),
     ]
     static var previews: some View {
-        RouteListView(routes: routes)
+        HorizontalRouteListView(routes: routes)
     }
 }
