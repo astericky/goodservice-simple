@@ -18,6 +18,7 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
     private var disposables = Set<AnyCancellable>()
     
     @Published var routes = [RouteViewModel]()
+    @Published var routesByStatus = [RouteViewModel]()
     
     init(goodServiceFetcher: GoodServiceFetcher,
         scheduler: DispatchQueue = DispatchQueue(label: "GoodServiceViewModel")) {
@@ -55,6 +56,18 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
                 self.routes = newRoutes
             })
             .store(in: &disposables)
+    }
+    
+    func getRoutesByStatus() -> [String: [RouteViewModel]] {
+        var accumulator = [String: [RouteViewModel]]()
+        return routes.reduce(accumulator, { currentResult, currentItem in
+            if var statusArray = accumulator[currentItem.status] {
+                statusArray.append(currentItem)
+            } else {
+                accumulator[currentItem.status] = [currentItem]
+            }
+            return accumulator
+        })
     }
     
 }
