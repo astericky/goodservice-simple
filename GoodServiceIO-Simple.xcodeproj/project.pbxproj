@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D20AD1A274C65B200DC288E /* RouteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD19274C65B200DC288E /* RouteListView.swift */; };
+		3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */; };
 		3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */; };
 		3D20AD2027542B4300DC288E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD1F27542B4300DC288E /* Extensions.swift */; };
 		3D20AD2227543E6800DC288E /* RouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD2127543E6800DC288E /* RouteViewModel.swift */; };
+		3D20AD252762454F00DC288E /* WrappingHStack in Frameworks */ = {isa = PBXBuildFile; productRef = 3D20AD242762454F00DC288E /* WrappingHStack */; };
 		3D2D1A12272DC04A008BF58D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D1A11272DC04A008BF58D /* Tests_iOS.swift */; };
 		3D2D1A14272DC04A008BF58D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D1A13272DC04A008BF58D /* Tests_iOSLaunchTests.swift */; };
 		3D2D1A1E272DC04A008BF58D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D1A1D272DC04A008BF58D /* Tests_macOS.swift */; };
@@ -53,7 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D20AD19274C65B200DC288E /* RouteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListView.swift; sourceTree = "<group>"; };
+		3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRouteListView.swift; sourceTree = "<group>"; };
 		3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceViewModel.swift; sourceTree = "<group>"; };
 		3D20AD1F27542B4300DC288E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3D20AD2127543E6800DC288E /* RouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteViewModel.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D20AD252762454F00DC288E /* WrappingHStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +125,7 @@
 		3D20AD18274C657400DC288E /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				3D20AD19274C65B200DC288E /* RouteListView.swift */,
+				3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -249,6 +251,9 @@
 			dependencies = (
 			);
 			name = "GoodServiceIO-Simple (iOS)";
+			packageProductDependencies = (
+				3D20AD242762454F00DC288E /* WrappingHStack */,
+			);
 			productName = "GoodServiceIO-Simple (iOS)";
 			productReference = 3D2D1A00272DC04A008BF58D /* GoodServiceIO-Simple.app */;
 			productType = "com.apple.product-type.application";
@@ -341,6 +346,9 @@
 				Base,
 			);
 			mainGroup = 3D2D19F0272DC049008BF58D;
+			packageReferences = (
+				3D20AD232762454F00DC288E /* XCRemoteSwiftPackageReference "WrappingHStack" */,
+			);
 			productRefGroup = 3D2D1A01272DC04A008BF58D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -397,7 +405,7 @@
 				3D2D1A27272DC04A008BF58D /* Persistence.swift in Sources */,
 				3D20AD2227543E6800DC288E /* RouteViewModel.swift in Sources */,
 				3D2D1A21272DC04A008BF58D /* GoodServiceIO_Simple.xcdatamodeld in Sources */,
-				3D20AD1A274C65B200DC288E /* RouteListView.swift in Sources */,
+				3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */,
 				3DF62F8327383FBD0053D299 /* TabContentView.swift in Sources */,
 				3DF62F77272EEDE00053D299 /* TestData.swift in Sources */,
 				3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */,
@@ -833,6 +841,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D20AD232762454F00DC288E /* XCRemoteSwiftPackageReference "WrappingHStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dkk/WrappingHStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D20AD242762454F00DC288E /* WrappingHStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D20AD232762454F00DC288E /* XCRemoteSwiftPackageReference "WrappingHStack" */;
+			productName = WrappingHStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3D2D19F6272DC049008BF58D /* GoodServiceIO_Simple.xcdatamodeld */ = {

@@ -9,9 +9,14 @@ import SwiftUI
 
 struct TabContentView: View {
     @ObservedObject var viewModel: GoodServiceViewModel
+    
+    @State private var selection = 0
+    
     var body: some View {
         ZStack {
-            Text("Hello everyone")
+            TabView(selection: $selection) {
+                
+            }
         }
     }
 }

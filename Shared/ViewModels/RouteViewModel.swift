@@ -10,6 +10,10 @@ import SwiftUI
 final class RouteViewModel: ObservableObject, Identifiable {
     private var route: Route
     
+    var id: String {
+        route.id
+    }
+    
     var name: String {
         route.name
     }

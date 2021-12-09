@@ -7,6 +7,12 @@
 
 import Foundation
 
+// Test Routes: Primarily for testing out SwiftUI Components
+let route1 = Route(id: "A", name: "A", color: "#0000FF", textColor: "#FFFFFF", alternateName: "Leftert's Blvd", status: "Good Service", visible: true, scheduled: true)
+let routeA = Route(id: "1", name: "1", color: "#FF0000", textColor: "#FFFFFF", alternateName: nil, status: "Not Good Service", visible: true, scheduled: true)
+let routeN = Route(id: "N", name: "N", color: "#fbbd08", textColor: "#000000", alternateName: nil, status: "Delayed Service", visible: true, scheduled: true)
+let routeS = Route(id: "GS", name: "S", color: "#767676", textColor: "#FFFFFF", alternateName: "42 St Shuttle", status: "Service Change", visible: true, scheduled: true)
+
 func load<T: Decodable>(_ filename: String, as type: T.Type = T.self) -> T {
     let data: Data
     
