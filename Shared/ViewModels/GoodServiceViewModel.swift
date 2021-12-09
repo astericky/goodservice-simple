@@ -20,14 +20,19 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
     @Published var routes = [RouteViewModel]()
     
     init(goodServiceFetcher: GoodServiceFetcher,
-         scheduler: DispatchQueue = DispatchQueue(label: "GoodServiceViewModel")) {
+        scheduler: DispatchQueue = DispatchQueue(label: "GoodServiceViewModel")) {
         self.goodServiceFetcher = goodServiceFetcher
-        
+        #if DEBUG
+            fetchRoutesFromLocalData()
+        #else
+            fetchRoutesFromAPI()
+        #endif
     }
     
-    func fetchRoutes() {
+    func fetchRoutesFromAPI() {
         goodServiceFetcher
             .getRoutesFromAPI()
+            .receive(on: DispatchQueue.main)
             .sink(
                 receiveCompletion: { _ in },
                 receiveValue: { [weak self] data in
@@ -36,8 +41,20 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
                 self.routes = newRoutes
             })
             .store(in: &disposables)
-            
-            
+    }
+    
+    func fetchRoutesFromLocalData() {
+        goodServiceFetcher
+            .getRoutesFromLocalData()
+            .receive(on: DispatchQueue.main)
+            .sink(
+                receiveCompletion: { _ in },
+                receiveValue: { [weak self] data in
+                guard let self = self else { return }
+                let newRoutes = data.routes.values.map(RouteViewModel.init)
+                self.routes = newRoutes
+            })
+            .store(in: &disposables)
     }
     
 }

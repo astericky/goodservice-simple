@@ -8,16 +8,25 @@
 import SwiftUI
 
 struct TabContentView: View {
+    @ObservedObject var viewModel: GoodServiceViewModel
     var body: some View {
         ZStack {
-            
+            Text("Hello everyone")
         }
     }
 }
 
+private extension TabContentView {
+  var loading: some View {
+    Text("Loading...")
+      .foregroundColor(.gray)
+  }
+}
+
 
 struct TabContentView_Previews: PreviewProvider {
+    static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
-        TabContentView()
+        TabContentView(viewModel: viewModel)
     }
 }
