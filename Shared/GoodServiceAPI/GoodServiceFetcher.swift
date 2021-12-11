@@ -29,7 +29,6 @@ extension GoodServiceFetcher: GoodServiceFetchable {
     
     func getRoutesFromLocalData() -> AnyPublisher<RoutesResponse, GoodServiceError> {
         let routes: RoutesResponse = load("routes.json")
-        print(routes)
         return Just<RoutesResponse>(routes)
             .setFailureType(to: GoodServiceError.self)
             .eraseToAnyPublisher()

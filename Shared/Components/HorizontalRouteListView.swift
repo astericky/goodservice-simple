@@ -14,12 +14,12 @@ struct HorizontalRouteListView: View {
     var body: some View {
         WrappingHStack(routes, alignment: .leading, spacing: .constant(8)) { route in
                 Text(route.name)
-                .foregroundColor(route.textColor)
+                    .foregroundColor(route.textColor)
                     .frame(width: 25, height:25)
                     .background(route.bgColor)
                     .clipShape(Circle())
                     .padding(.bottom, 8)
-        }
+        }.frame(maxWidth: .infinity)
     }
 }
 

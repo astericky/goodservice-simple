@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0362302765139B0026ED8B /* RouteStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03622F2765139B0026ED8B /* RouteStatusView.swift */; };
+		3D1DFD812763A6C80036DDAF /* RouteListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DFD802763A6C80036DDAF /* RouteListTab.swift */; };
 		3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */; };
 		3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */; };
 		3D20AD2027542B4300DC288E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD1F27542B4300DC288E /* Extensions.swift */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3D03622F2765139B0026ED8B /* RouteStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStatusView.swift; sourceTree = "<group>"; };
+		3D1DFD802763A6C80036DDAF /* RouteListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListTab.swift; sourceTree = "<group>"; };
 		3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRouteListView.swift; sourceTree = "<group>"; };
 		3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceViewModel.swift; sourceTree = "<group>"; };
 		3D20AD1F27542B4300DC288E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 		3D20AD17274C656200DC288E /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
+				3D1DFD802763A6C80036DDAF /* RouteListTab.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -126,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */,
+				3D03622F2765139B0026ED8B /* RouteStatusView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -408,12 +414,14 @@
 				3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */,
 				3DF62F8327383FBD0053D299 /* TabContentView.swift in Sources */,
 				3DF62F77272EEDE00053D299 /* TestData.swift in Sources */,
+				3D1DFD812763A6C80036DDAF /* RouteListTab.swift in Sources */,
 				3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */,
 				3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */,
 				3D20AD2027542B4300DC288E /* Extensions.swift in Sources */,
 				3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */,
 				3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */,
 				3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */,
+				3D0362302765139B0026ED8B /* RouteStatusView.swift in Sources */,
 				3D2D1A25272DC04A008BF58D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

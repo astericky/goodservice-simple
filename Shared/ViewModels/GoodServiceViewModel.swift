@@ -61,14 +61,15 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
     }
     
     func getRoutesByStatus() -> [String: [RouteViewModel]] {
-        var accumulator = [String: [RouteViewModel]]()
-        return routes.reduce(accumulator, { currentResult, currentItem in
-            if var statusArray = accumulator[currentItem.status] {
-                statusArray.append(currentItem)
+        let accumulator = [String: [RouteViewModel]]()
+        return self.routes.reduce(accumulator, { currentResult, currentItem in
+            var routesByStatus = currentResult
+            if routesByStatus[currentItem.status] != nil {
+                routesByStatus[currentItem.status]!.append(currentItem)
             } else {
-                accumulator[currentItem.status] = [currentItem]
+                routesByStatus[currentItem.status] = [currentItem]
             }
-            return accumulator
+            return routesByStatus
         })
     }
     

@@ -15,7 +15,7 @@ final class RouteViewModel: ObservableObject, Identifiable {
     }
     
     var name: String {
-        route.name
+        String(route.name.prefix(1))
     }
     
     var alternateName: String? {
@@ -31,7 +31,7 @@ final class RouteViewModel: ObservableObject, Identifiable {
     }
     
     var textColor: Color {
-        Color.createColor(from: route.textColor ?? "")
+        Color.createColor(from: route.textColor ?? "#FFFFFF")
     }
     
     init(route: Route) {

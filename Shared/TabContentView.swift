@@ -15,7 +15,11 @@ struct TabContentView: View {
     var body: some View {
         ZStack {
             TabView(selection: $selection) {
-                
+                RouteListTab(routes: viewModel.routesByStatus)
+                  .tabItem {
+                    Image("subway")
+                    Text("Trains")
+                }.tag(0)
             }
         }
     }
