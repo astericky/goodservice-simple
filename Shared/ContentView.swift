@@ -17,7 +17,10 @@ struct ContentView: View {
     private var items: FetchedResults<Item>
 
     var body: some View {
-        TabContentView(viewModel: GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher()))
+        VStack {
+            TabContentView(viewModel: GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher()))
+        }
+        .background(.black)
     }
 }
 

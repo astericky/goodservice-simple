@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D0362302765139B0026ED8B /* RouteStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03622F2765139B0026ED8B /* RouteStatusView.swift */; };
+		3D0362322765BBC80026ED8B /* GoodServiceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0362312765BBC80026ED8B /* GoodServiceHeaderView.swift */; };
 		3D1DFD812763A6C80036DDAF /* RouteListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DFD802763A6C80036DDAF /* RouteListTab.swift */; };
 		3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */; };
 		3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		3D03622F2765139B0026ED8B /* RouteStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStatusView.swift; sourceTree = "<group>"; };
+		3D0362312765BBC80026ED8B /* GoodServiceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceHeaderView.swift; sourceTree = "<group>"; };
 		3D1DFD802763A6C80036DDAF /* RouteListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListTab.swift; sourceTree = "<group>"; };
 		3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRouteListView.swift; sourceTree = "<group>"; };
 		3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceViewModel.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */,
 				3D03622F2765139B0026ED8B /* RouteStatusView.swift */,
+				3D0362312765BBC80026ED8B /* GoodServiceHeaderView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */,
 				3D20AD2027542B4300DC288E /* Extensions.swift in Sources */,
 				3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */,
+				3D0362322765BBC80026ED8B /* GoodServiceHeaderView.swift in Sources */,
 				3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */,
 				3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */,
 				3D0362302765139B0026ED8B /* RouteStatusView.swift in Sources */,

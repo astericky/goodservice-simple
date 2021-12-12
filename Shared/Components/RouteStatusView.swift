@@ -18,7 +18,6 @@ struct RouteStatusView: View {
             VStack {
                 statusTitle
                     .frame(width: proxy.size.width)
-                    .background(.blue)
                 horizontalList
                     .frame(width: proxy.size.width)
             }
