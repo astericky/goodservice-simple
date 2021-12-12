@@ -13,14 +13,15 @@ struct RouteListTab: View {
         Array<String>(routes.keys)
     }
     var body: some View {
-        VStack {
-            ForEach(statusList, id: \.self) { status in
-                Text(status)
-                if let routesWithStatus = routes[status] {
-                    HorizontalRouteListView(routes: routesWithStatus)
+            GeometryReader { proxy in
+                VStack {
+                    ForEach(statusList, id: \.self) { status in
+                        if let routesWithStatus = routes[status] {
+                            RouteStatusView(status: status, routes: routesWithStatus)
+                        }
+                    }
                 }
             }
-        }
     }
 }
 

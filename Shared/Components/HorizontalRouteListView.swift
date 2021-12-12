@@ -18,7 +18,7 @@ struct HorizontalRouteListView: View {
                     .frame(width: 25, height:25)
                     .background(route.bgColor)
                     .clipShape(Circle())
-                    .padding(.bottom, 8)
+                    .padding(.vertical, 4)
         }.frame(maxWidth: .infinity)
     }
 }
