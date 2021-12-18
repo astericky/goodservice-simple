@@ -13,13 +13,15 @@ struct HorizontalRouteListView: View {
 
     var body: some View {
         WrappingHStack(routes, alignment: .leading, spacing: .constant(8)) { route in
+            NavigationLink(destination: RouteDetailView(route: route)) {
                 Text(route.name)
                     .foregroundColor(route.textColor)
                     .frame(width: 25, height:25)
                     .background(route.bgColor)
                     .clipShape(Circle())
                     .padding(.vertical, 4)
-        }.frame(maxWidth: .infinity)
+            }
+        }.frame(maxWidth: 360)
     }
 }
 
@@ -44,5 +46,6 @@ struct HorizontalRouteListView_Previews: PreviewProvider {
     ]
     static var previews: some View {
         HorizontalRouteListView(routes: routes)
+            .previewLayout(.sizeThatFits)
     }
 }

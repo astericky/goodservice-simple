@@ -14,14 +14,11 @@ struct RouteStatusView: View {
     }
     var routes: [RouteViewModel]
     var body: some View {
-        GeometryReader { proxy in
-            VStack {
-                statusTitle
-                    .frame(width: proxy.size.width)
-                horizontalList
-                    .frame(width: proxy.size.width)
-            }
+        VStack {
+            statusTitle
+            horizontalList
         }
+        .padding(.init(top: 16, leading: 16, bottom: 16, trailing: 16))
     }
 }
 
@@ -31,7 +28,7 @@ extension RouteStatusView {
             Text(status)
                 .foregroundColor(statusColor)
             Spacer()
-        }.padding(.init(top: 4, leading: 8, bottom: 4, trailing: 8))
+        }.padding(.init(top: 8, leading: 0, bottom: 0, trailing: 8))
     }
     
     var horizontalList: some View {
@@ -41,7 +38,8 @@ extension RouteStatusView {
             } else {
                 EmptyView()
             }
-        }.padding(.init(top: 4, leading: 8, bottom: 0, trailing: 8))
+        }
+        .padding(.init(top: 0, leading: 0, bottom: 8, trailing: 0))
     }
 }
 
@@ -55,6 +53,9 @@ struct RouteStatusView_Previews: PreviewProvider {
         RouteViewModel(route: route1),
     ]
     static var previews: some View {
-        RouteStatusView(status: "No Service", routes: routes)
+        Group {
+            RouteStatusView(status: "No Service", routes: routes)
+                .previewLayout(.sizeThatFits)
+        }
     }
 }

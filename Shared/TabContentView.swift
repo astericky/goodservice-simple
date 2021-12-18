@@ -10,16 +10,12 @@ import SwiftUI
 struct TabContentView: View {
     @ObservedObject var viewModel: GoodServiceViewModel
     
-    @State private var selection = 0
-    
     var body: some View {
         ZStack {
-            TabView(selection: $selection) {
-                RouteListTab(routes: viewModel.routesByStatus)
-                  .tabItem {
-                    Image("subway")
-                    Text("Trains")
-                }.tag(0)
+            RouteListTab(routes: viewModel.routesByStatus)
+              .tabItem {
+                Image("subway")
+                Text("Trains")
             }
         }
     }
