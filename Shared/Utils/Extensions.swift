@@ -63,4 +63,21 @@ extension Color {
         }
         return Color(red: 118 / 255, green: 118 / 255, blue: 118 / 255)
     }
+    
+    static func getColor(from status: String) -> Color {
+        switch status {
+        case "Good Service":
+            return goodService
+        case "Service Change":
+            return serviceChange
+        case "Delay":
+            return notGoodService
+        case "Slow":
+            return notGoodService
+        case "Not Good":
+            return notGoodService
+        default:
+            return Color.white
+        }
+    }
 }

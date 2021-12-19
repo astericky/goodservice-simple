@@ -1,14 +1,14 @@
 //
-//  RouteViewModel.swift
+//  RouteDetailViewModel.swift
 //  GoodServiceIO-Simple (iOS)
 //
-//  Created by Christopher Sanders on 11/28/21.
+//  Created by Christopher Sanders on 12/19/21.
 //
 
 import SwiftUI
 
-final class RouteViewModel: ObservableObject, Identifiable {
-    private var route: Route
+final class RouteDetailViewModel: ObservableObject {
+    private var route: RouteDetailResponse
     
     var id: String {
         route.id
@@ -38,7 +38,11 @@ final class RouteViewModel: ObservableObject, Identifiable {
         Color.getColor(from: route.status)
     }
     
-    init(route: Route) {
+    var serviceChangeSummaries: [String: [String]] {
+        route.serviceChangeSummaries
+    }
+    
+    init(route: RouteDetailResponse) {
         self.route = route
     }
 }

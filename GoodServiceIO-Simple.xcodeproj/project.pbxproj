@@ -31,6 +31,8 @@
 		3D2D1A2A272DC04A008BF58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2D19FB272DC04A008BF58D /* Assets.xcassets */; };
 		3D56A0FB276EA0CA00E65748 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A0FA276EA0CA00E65748 /* RouteDetailView.swift */; };
 		3D56A0FE276F8FA600E65748 /* RouteIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A0FD276F8FA600E65748 /* RouteIconView.swift */; };
+		3D56A102276FBB4600E65748 /* RouteDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */; };
+		3D56A104276FBB9F00E65748 /* RouteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */; };
 		3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */; };
 		3DF62F77272EEDE00053D299 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F76272EEDE00053D299 /* TestData.swift */; };
 		3DF62F79272EEE230053D299 /* routes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62F78272EEE230053D299 /* routes.json */; };
@@ -82,6 +84,8 @@
 		3D2D1A1F272DC04A008BF58D /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		3D56A0FA276EA0CA00E65748 /* RouteDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailView.swift; sourceTree = "<group>"; };
 		3D56A0FD276F8FA600E65748 /* RouteIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteIconView.swift; sourceTree = "<group>"; };
+		3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailResponse.swift; sourceTree = "<group>"; };
+		3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailViewModel.swift; sourceTree = "<group>"; };
 		3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceFetcher.swift; sourceTree = "<group>"; };
 		3DF62F76272EEDE00053D299 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		3DF62F78272EEE230053D299 /* routes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = routes.json; sourceTree = "<group>"; };
@@ -150,6 +154,7 @@
 			children = (
 				3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */,
 				3D20AD2127543E6800DC288E /* RouteViewModel.swift */,
+				3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 				3DF62F7C27337C340053D299 /* RoutesResponse.swift */,
 				3DF62F7E27337F670053D299 /* StopsResponse.swift */,
 				3DF62F80273382580053D299 /* GoodServiceError.swift */,
+				3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */,
 			);
 			path = GoodServiceAPI;
 			sourceTree = "<group>";
@@ -429,10 +435,12 @@
 				3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */,
 				3D56A0FE276F8FA600E65748 /* RouteIconView.swift in Sources */,
 				3D20AD2027542B4300DC288E /* Extensions.swift in Sources */,
+				3D56A104276FBB9F00E65748 /* RouteDetailViewModel.swift in Sources */,
 				3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */,
 				3D0362322765BBC80026ED8B /* GoodServiceHeaderView.swift in Sources */,
 				3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */,
 				3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */,
+				3D56A102276FBB4600E65748 /* RouteDetailResponse.swift in Sources */,
 				3D0362302765139B0026ED8B /* RouteStatusView.swift in Sources */,
 				3D2D1A25272DC04A008BF58D /* ContentView.swift in Sources */,
 			);
