@@ -49,6 +49,28 @@ extension GoodServiceFetcher: GoodServiceFetchable {
             .eraseToAnyPublisher()
     }
     
+    func getRouteFromLocalData() -> AnyPublisher<RouteDetailResponse, GoodServiceError> {
+        let routes: RouteDetailResponse = load("route.json")
+        return Just<RouteDetailResponse>(routes)
+            .setFailureType(to: GoodServiceError.self)
+            .eraseToAnyPublisher()
+    }
+    
+    func getRouteFromAPI(route: String) -> AnyPublisher<RouteDetailResponse, GoodServiceError> {
+        guard let url = URL(string: GoodServiceFetcher.routesURL + "/\(route)") else {
+            let error = GoodServiceError.network(description: "Couldn't create url.")
+            return Fail(error: error).eraseToAnyPublisher()
+        }
+        return session.dataTaskPublisher(for: URLRequest(url: url))
+            .map { $0.data }
+            .decode(type: RouteDetailResponse.self, decoder: JSONDecoder())
+            .mapError { error in
+                print(error)
+                return .network(description: error.localizedDescription)
+            }
+            .eraseToAnyPublisher()
+    }
+    
     func getStopsFromLocalData() -> StopsResponse {
         return load("stops.json")
     }

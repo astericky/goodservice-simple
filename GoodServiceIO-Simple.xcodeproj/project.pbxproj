@@ -33,6 +33,7 @@
 		3D56A0FE276F8FA600E65748 /* RouteIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A0FD276F8FA600E65748 /* RouteIconView.swift */; };
 		3D56A102276FBB4600E65748 /* RouteDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */; };
 		3D56A104276FBB9F00E65748 /* RouteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */; };
+		3D56A106276FBEAA00E65748 /* route.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D56A105276FBEAA00E65748 /* route.json */; };
 		3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */; };
 		3DF62F77272EEDE00053D299 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F76272EEDE00053D299 /* TestData.swift */; };
 		3DF62F79272EEE230053D299 /* routes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62F78272EEE230053D299 /* routes.json */; };
@@ -86,6 +87,7 @@
 		3D56A0FD276F8FA600E65748 /* RouteIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteIconView.swift; sourceTree = "<group>"; };
 		3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailResponse.swift; sourceTree = "<group>"; };
 		3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailViewModel.swift; sourceTree = "<group>"; };
+		3D56A105276FBEAA00E65748 /* route.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = route.json; sourceTree = "<group>"; };
 		3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceFetcher.swift; sourceTree = "<group>"; };
 		3DF62F76272EEDE00053D299 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		3DF62F78272EEE230053D299 /* routes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = routes.json; sourceTree = "<group>"; };
@@ -252,6 +254,7 @@
 				3DF62F76272EEDE00053D299 /* TestData.swift */,
 				3DF62F78272EEE230053D299 /* routes.json */,
 				3DF62F7A272EEE370053D299 /* stops.json */,
+				3D56A105276FBEAA00E65748 /* route.json */,
 			);
 			path = PreviewData;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2D1A29272DC04A008BF58D /* Assets.xcassets in Resources */,
+				3D56A106276FBEAA00E65748 /* route.json in Resources */,
 				3DF62F79272EEE230053D299 /* routes.json in Resources */,
 				3DF62F7B272EEE370053D299 /* stops.json in Resources */,
 			);
