@@ -14,22 +14,20 @@ struct RouteListTab: View {
     }
     var body: some View {
         GeometryReader { proxy in
-            NavigationView {
-                VStack {
-                    GoodServiceHeaderView()
-                        .frame(width: proxy.size.width)
-                    ScrollView(.vertical) {
-                        VStack {
-                            ForEach(statusList, id: \.self) { status in
-                                if let routesWithStatus = routes[status] {
-                                    RouteStatusView(status: status, routes: routesWithStatus)
-                                }
+            VStack {
+                GoodServiceHeaderView()
+                    .frame(width: proxy.size.width)
+                ScrollView(.vertical) {
+                    VStack {
+                        ForEach(statusList, id: \.self) { status in
+                            if let routesWithStatus = routes[status] {
+                                RouteStatusView(status: status, routes: routesWithStatus)
                             }
                         }
                     }
                 }
-                .background(.black)
             }
+            .background(.black)
         }
     }
 }

@@ -11,7 +11,11 @@ struct RouteDetailView: View {
     var route: RouteViewModel
     var body: some View {
         VStack {
-            Text(route.name)
+            HStack {
+                RouteIconView(route: route, size: 80)
+                Spacer()
+            }
+            
             Spacer()
         }
     }

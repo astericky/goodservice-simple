@@ -8,20 +8,31 @@
 import SwiftUI
 import WrappingHStack
 
-struct HorizontalRouteListView: View {
-    var routes = [RouteViewModel]()
+class SelectedRouteManager: ObservableObject {
+    @Published var selectedRoute: RouteViewModel? = nil
+    @Published var showRoute = false
+}
 
+struct HorizontalRouteListView: View {
+    @StateObject private var selectedRouteManager = SelectedRouteManager()
+    
+    var routes = [RouteViewModel]()
     var body: some View {
         WrappingHStack(routes, alignment: .leading, spacing: .constant(8)) { route in
-            NavigationLink(destination: RouteDetailView(route: route)) {
-                Text(route.name)
-                    .foregroundColor(route.textColor)
-                    .frame(width: 25, height:25)
-                    .background(route.bgColor)
-                    .clipShape(Circle())
-                    .padding(.vertical, 4)
+            RouteIconView(route: route)
+                .onTapGesture {
+                    self.selectedRouteManager.selectedRoute = route
+                    self.selectedRouteManager.showRoute.toggle()
+                }
+        }
+        .frame(maxWidth: 360)
+        .sheet(isPresented: $selectedRouteManager.showRoute) {
+            if let routeToShow = selectedRouteManager.selectedRoute {
+                RouteDetailView(route: routeToShow)
+            } else {
+                Text("There is no route to show.")
             }
-        }.frame(maxWidth: 360)
+        }
     }
 }
 
