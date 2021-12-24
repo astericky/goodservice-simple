@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct RouteListTab: View {
-    var routes = [String: [RouteViewModel]]()
+    @ObservedObject var viewModel: GoodServiceViewModel
     var statusList: [String] {
-        Array<String>(routes.keys)
+        Array<String>(viewModel.routesByStatus.keys)
     }
+
     var body: some View {
         GeometryReader { proxy in
             VStack {
@@ -20,9 +21,7 @@ struct RouteListTab: View {
                 ScrollView(.vertical) {
                     VStack {
                         ForEach(statusList, id: \.self) { status in
-                            if let routesWithStatus = routes[status] {
-                                RouteStatusView(status: status, routes: routesWithStatus)
-                            }
+                            RouteStatusView(viewModel: viewModel, status: status)
                         }
                     }
                 }
@@ -35,6 +34,6 @@ struct RouteListTab: View {
 struct RouteListTab_Previews: PreviewProvider {
     static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
-        RouteListTab(routes: viewModel.routesByStatus)
+        RouteListTab(viewModel: viewModel)
     }
 }

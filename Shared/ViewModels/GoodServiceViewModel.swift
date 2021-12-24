@@ -72,5 +72,4 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
             return routesByStatus
         })
     }
-    
 }

@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct RouteDetailView: View {
-    var route: RouteViewModel
+    var routeViewModel: RouteViewModel
+
     var body: some View {
         VStack {
             title
@@ -24,16 +25,16 @@ struct RouteDetailView: View {
 extension RouteDetailView {
     var title: some View {
         HStack {
-            RouteIconView(route: route, size: 80)
+            RouteIconView(route: routeViewModel, size: 80)
             Spacer()
         }
         .padding(.horizontal)
     }
     var status: some View {
         VStack {
-            Text(route.status)
+            Text(routeViewModel.status)
                 .font(.title)
-                .foregroundColor(route.statusColor)
+                .foregroundColor(routeViewModel.statusColor)
             Text("STATUS")
                 .foregroundColor(.white)
         }
@@ -69,8 +70,8 @@ extension RouteDetailView {
 }
 
 struct RouteDetailView_Previews: PreviewProvider {
-    static var route = RouteViewModel(route: routeA)
+    static var routeViewModel = RouteViewModel(route: routeA)
     static var previews: some View {
-        RouteDetailView(route: route)
+        RouteDetailView(routeViewModel: routeViewModel)
     }
 }

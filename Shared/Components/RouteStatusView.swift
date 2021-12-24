@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct RouteStatusView: View {
+    @ObservedObject var viewModel: GoodServiceViewModel
     var status: String
     var statusColor: Color {
         Color("color-" + status.lowercased().replacingOccurrences(of: " ", with: "-"))
     }
-    var routes: [RouteViewModel]
+
     var body: some View {
         VStack {
             statusTitle
@@ -33,7 +34,7 @@ extension RouteStatusView {
     
     var horizontalList: some View {
         VStack {
-            if !routes.isEmpty {
+            if let routes = viewModel.routesByStatus[status] {
                 HorizontalRouteListView(routes: routes)
             } else {
                 EmptyView()
@@ -52,9 +53,10 @@ struct RouteStatusView_Previews: PreviewProvider {
         RouteViewModel(route: routeA),
         RouteViewModel(route: route1),
     ]
+    static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
         Group {
-            RouteStatusView(status: "No Service", routes: routes)
+            RouteStatusView(viewModel: viewModel, status: "No Service")
                 .previewLayout(.sizeThatFits)
         }
     }

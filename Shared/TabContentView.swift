@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct TabContentView: View {
-    @ObservedObject var viewModel: GoodServiceViewModel
+    @StateObject var viewModel: GoodServiceViewModel
     
     var body: some View {
         ZStack {
-            RouteListTab(routes: viewModel.routesByStatus)
+            RouteListTab(viewModel: viewModel)
+//            RouteListTab(routes: viewModel.routesByStatus)
               .tabItem {
                 Image("subway")
                 Text("Trains")

@@ -28,7 +28,7 @@ struct HorizontalRouteListView: View {
         .frame(maxWidth: 360)
         .sheet(isPresented: $selectedRouteManager.showRoute) {
             if let routeToShow = selectedRouteManager.selectedRoute {
-                RouteDetailView(route: routeToShow)
+                RouteDetailView(routeViewModel: routeToShow)
             } else {
                 Text("There is no route to show.")
             }

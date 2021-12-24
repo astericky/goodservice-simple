@@ -5,10 +5,15 @@
 //  Created by Christopher Sanders on 11/28/21.
 //
 
+import Combine
 import SwiftUI
 
 final class RouteViewModel: ObservableObject, Identifiable {
     private var route: Route
+    private var routeDetail: RouteDetailViewModel?
+    
+    private var goodServiceFetcher = GoodServiceFetcher()
+    private var disposables = Set<AnyCancellable>()
     
     var id: String {
         route.id
@@ -40,5 +45,16 @@ final class RouteViewModel: ObservableObject, Identifiable {
     
     init(route: Route) {
         self.route = route
+    }
+    
+    func fetchRouteFromLocalData(using route: String) {
+        goodServiceFetcher
+            .getRouteFromLocalData()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] data in
+                guard let self = self else { return }
+                self.routeDetail = RouteDetailViewModel(route: data)
+            })
+            .store(in: &disposables)
     }
 }
