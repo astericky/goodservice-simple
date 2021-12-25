@@ -9,9 +9,8 @@ import Combine
 import SwiftUI
 
 final class RouteViewModel: ObservableObject, Identifiable {
-    private var route: Route
-    
-    public var routeDetail: RouteDetailViewModel?
+    @Published public var route: Route
+    @Published public var routeDetail: RouteDetailViewModel?
     
     private var goodServiceFetcher = GoodServiceFetcher()
     private var disposables = Set<AnyCancellable>()

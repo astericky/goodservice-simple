@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RouteDetailView: View {
-    var route: RouteViewModel
+    @ObservedObject var route: RouteViewModel
 
     var body: some View {
         VStack {
@@ -52,9 +52,12 @@ struct ServiceChangeSummariesView: View {
             HStack {
                 Spacer()
                 Text("Service Changes")
+                    .font(.system(size: 12, weight: .bold, design: .default))
+                    .textCase(.uppercase)
                 Spacer()
             }
-            .background(route.statusColor)
+            .padding(.vertical, 6)
+            .background(Color.serviceChange)
             
             if let bothServiceChange = route.routeDetail?.serviceChangeSummaries["both"] {
                 ForEach(bothServiceChange, id: \.self) { serviceChangeSummary in
