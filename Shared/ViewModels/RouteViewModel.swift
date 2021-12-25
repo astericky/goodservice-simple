@@ -10,7 +10,8 @@ import SwiftUI
 
 final class RouteViewModel: ObservableObject, Identifiable {
     private var route: Route
-    private var routeDetail: RouteDetailViewModel?
+    
+    public var routeDetail: RouteDetailViewModel?
     
     private var goodServiceFetcher = GoodServiceFetcher()
     private var disposables = Set<AnyCancellable>()
@@ -47,7 +48,7 @@ final class RouteViewModel: ObservableObject, Identifiable {
         self.route = route
     }
     
-    func fetchRouteFromLocalData(using route: String) {
+    func fetchRouteDetailFromLocalData() {
         goodServiceFetcher
             .getRouteFromLocalData()
             .receive(on: DispatchQueue.main)
