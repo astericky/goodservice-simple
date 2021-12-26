@@ -9,13 +9,20 @@ import SwiftUI
 
 struct RouteDetailView: View {
     @ObservedObject var route: RouteViewModel
-
+    
     var body: some View {
         VStack {
             title
             status
-            if let _ = route.routeDetail?.serviceChangeSummaries {
-                ServiceChangeSummariesView(route: route)
+            if let serviceChangeSummaries = route.routeDetail?.serviceChangeSummaries,
+               let bothServiceChangeSummaries = serviceChangeSummaries["both"],
+               let northServiceChangeSummaries = serviceChangeSummaries["north"],
+               let southServiceChangeSummaries = serviceChangeSummaries["south"]
+            {
+                if !bothServiceChangeSummaries.isEmpty || !northServiceChangeSummaries.isEmpty || !southServiceChangeSummaries.isEmpty {
+                    ServiceChangeSummariesView(route: route)
+                }
+                
             }
             Spacer()
         }
@@ -44,11 +51,11 @@ extension RouteDetailView {
     }
     
     func getRouteDetail() {
-        #if DEBUG
-            route.fetchRouteDetailFromLocalData()
-        #else
-            route.fetchRouteDetailFromAPI()
-        #endif
+#if DEBUG
+        route.fetchRouteDetailFromLocalData()
+#else
+        route.fetchRouteDetailFromAPI()
+#endif
     }
 }
 
@@ -75,7 +82,7 @@ struct ServiceChangeSummariesView: View {
                     }.padding(4)
                 }
             }
-
+            
             if let northServiceChange = route.routeDetail?.serviceChangeSummaries["north"] {
                 ForEach(northServiceChange, id: \.self) { serviceChangeSummary in
                     HStack {
@@ -84,7 +91,7 @@ struct ServiceChangeSummariesView: View {
                     }.padding(4)
                 }
             }
-
+            
             if let southServiceChagne = route.routeDetail?.serviceChangeSummaries["south"] {
                 ForEach(southServiceChagne, id: \.self) { serviceChangeSummary in
                     HStack {

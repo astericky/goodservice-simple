@@ -20,7 +20,8 @@ final class RouteViewModel: ObservableObject, Identifiable {
     }
     
     var name: String {
-        String(route.name.prefix(1))
+        let newName = route.name.suffix(1) == "X" ? String(route.name.prefix(1)) : route.name
+        return newName
     }
     
     var alternateName: String? {
@@ -60,7 +61,7 @@ final class RouteViewModel: ObservableObject, Identifiable {
     
     func fetchRouteDetailFromAPI() {
         goodServiceFetcher
-            .getRouteFromAPI(using: name)
+            .getRouteFromAPI(using: id)
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] data in
                 guard let self = self else { return }
