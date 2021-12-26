@@ -56,7 +56,7 @@ extension GoodServiceFetcher: GoodServiceFetchable {
             .eraseToAnyPublisher()
     }
     
-    func getRouteFromAPI(route: String) -> AnyPublisher<RouteDetailResponse, GoodServiceError> {
+    func getRouteFromAPI(using route: String) -> AnyPublisher<RouteDetailResponse, GoodServiceError> {
         guard let url = URL(string: GoodServiceFetcher.routesURL + "/\(route)") else {
             let error = GoodServiceError.network(description: "Couldn't create url.")
             return Fail(error: error).eraseToAnyPublisher()

@@ -21,7 +21,7 @@ struct RouteDetailView: View {
         }
         .foregroundColor(.white)
         .background(.black)
-        .onAppear(perform: route.fetchRouteDetailFromLocalData)
+        .onAppear(perform: self.getRouteDetail)
     }
 }
 
@@ -41,6 +41,14 @@ extension RouteDetailView {
             Text("STATUS")
                 .foregroundColor(.white)
         }
+    }
+    
+    func getRouteDetail() {
+        #if DEBUG
+            route.fetchRouteDetailFromLocalData()
+        #else
+            route.fetchRouteDetailFromAPI()
+        #endif
     }
 }
 

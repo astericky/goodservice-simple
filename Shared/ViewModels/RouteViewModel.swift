@@ -57,4 +57,15 @@ final class RouteViewModel: ObservableObject, Identifiable {
             })
             .store(in: &disposables)
     }
+    
+    func fetchRouteDetailFromAPI() {
+        goodServiceFetcher
+            .getRouteFromAPI(using: name)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] data in
+                guard let self = self else { return }
+                self.routeDetail = RouteDetailViewModel(route: data)
+            })
+            .store(in: &disposables)
+    }
 }
