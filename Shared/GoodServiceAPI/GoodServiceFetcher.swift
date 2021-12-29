@@ -94,8 +94,26 @@ extension GoodServiceFetcher: GoodServiceFetchable {
 
     }
     
-    func getStops() -> StopsResponse {
-        let stops: StopsResponse = load("stops.json")
-        return stops
+    func getStopFromLocalData() -> AnyPublisher<StopDetailResponse, GoodServiceError> {
+        let stops: StopDetailResponse = load("stop.json")
+        return Just<StopDetailResponse>(stops)
+            .setFailureType(to: GoodServiceError.self)
+            .eraseToAnyPublisher()
+    }
+    
+    func getStopFromAPI(using station: String) -> AnyPublisher<StopDetailResponse, GoodServiceError> {
+            guard let url = URL(string: GoodServiceFetcher.stopsURL + "/\(station)") else {
+                let error = GoodServiceError.network(description: "Couldn't create url.")
+                return Fail(error: error).eraseToAnyPublisher()
+            }
+            
+            return session.dataTaskPublisher(for: URLRequest(url: url))
+                .map { $0.data }
+                .decode(type: StopDetailResponse.self, decoder: JSONDecoder())
+                .mapError { error in
+                    print(error)
+                    return .network(description: error.localizedDescription)
+                }
+                .eraseToAnyPublisher()
     }
 }

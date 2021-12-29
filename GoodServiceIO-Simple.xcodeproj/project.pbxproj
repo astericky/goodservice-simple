@@ -36,6 +36,9 @@
 		3D56A106276FBEAA00E65748 /* route.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D56A105276FBEAA00E65748 /* route.json */; };
 		3D8AE493277C1F7400079C6B /* StationListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE492277C1F7400079C6B /* StationListTab.swift */; };
 		3D8AE495277C22FD00079C6B /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE494277C22FD00079C6B /* StationViewModel.swift */; };
+		3D8AE497277C2CA300079C6B /* StationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE496277C2CA300079C6B /* StationDetailViewModel.swift */; };
+		3D8AE499277C2E7100079C6B /* stop.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D8AE498277C2E7100079C6B /* stop.json */; };
+		3D8AE49B277C2EBC00079C6B /* StopDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE49A277C2EBC00079C6B /* StopDetailResponse.swift */; };
 		3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */; };
 		3DF62F77272EEDE00053D299 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F76272EEDE00053D299 /* TestData.swift */; };
 		3DF62F79272EEE230053D299 /* routes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62F78272EEE230053D299 /* routes.json */; };
@@ -91,6 +94,9 @@
 		3D56A105276FBEAA00E65748 /* route.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = route.json; sourceTree = "<group>"; };
 		3D8AE492277C1F7400079C6B /* StationListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListTab.swift; sourceTree = "<group>"; };
 		3D8AE494277C22FD00079C6B /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		3D8AE496277C2CA300079C6B /* StationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewModel.swift; sourceTree = "<group>"; };
+		3D8AE498277C2E7100079C6B /* stop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stop.json; sourceTree = "<group>"; };
+		3D8AE49A277C2EBC00079C6B /* StopDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopDetailResponse.swift; sourceTree = "<group>"; };
 		3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceFetcher.swift; sourceTree = "<group>"; };
 		3DF62F76272EEDE00053D299 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		3DF62F78272EEE230053D299 /* routes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = routes.json; sourceTree = "<group>"; };
@@ -161,6 +167,7 @@
 				3D20AD2127543E6800DC288E /* RouteViewModel.swift */,
 				3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */,
 				3D8AE494277C22FD00079C6B /* StationViewModel.swift */,
+				3D8AE496277C2CA300079C6B /* StationDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -247,6 +254,7 @@
 				3DF62F7E27337F670053D299 /* StopsResponse.swift */,
 				3DF62F80273382580053D299 /* GoodServiceError.swift */,
 				3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */,
+				3D8AE49A277C2EBC00079C6B /* StopDetailResponse.swift */,
 			);
 			path = GoodServiceAPI;
 			sourceTree = "<group>";
@@ -258,6 +266,7 @@
 				3DF62F78272EEE230053D299 /* routes.json */,
 				3DF62F7A272EEE370053D299 /* stops.json */,
 				3D56A105276FBEAA00E65748 /* route.json */,
+				3D8AE498277C2E7100079C6B /* stop.json */,
 			);
 			path = PreviewData;
 			sourceTree = "<group>";
@@ -393,6 +402,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D8AE499277C2E7100079C6B /* stop.json in Resources */,
 				3D2D1A29272DC04A008BF58D /* Assets.xcassets in Resources */,
 				3D56A106276FBEAA00E65748 /* route.json in Resources */,
 				3DF62F79272EEE230053D299 /* routes.json in Resources */,
@@ -432,6 +442,7 @@
 				3D2D1A23272DC04A008BF58D /* GoodServiceIO_SimpleApp.swift in Sources */,
 				3D56A0FB276EA0CA00E65748 /* RouteDetailView.swift in Sources */,
 				3D2D1A27272DC04A008BF58D /* Persistence.swift in Sources */,
+				3D8AE49B277C2EBC00079C6B /* StopDetailResponse.swift in Sources */,
 				3D20AD2227543E6800DC288E /* RouteViewModel.swift in Sources */,
 				3D8AE493277C1F7400079C6B /* StationListTab.swift in Sources */,
 				3D2D1A21272DC04A008BF58D /* GoodServiceIO_Simple.xcdatamodeld in Sources */,
@@ -447,6 +458,7 @@
 				3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */,
 				3D0362322765BBC80026ED8B /* GoodServiceHeaderView.swift in Sources */,
 				3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */,
+				3D8AE497277C2CA300079C6B /* StationDetailViewModel.swift in Sources */,
 				3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */,
 				3D56A102276FBB4600E65748 /* RouteDetailResponse.swift in Sources */,
 				3D0362302765139B0026ED8B /* RouteStatusView.swift in Sources */,

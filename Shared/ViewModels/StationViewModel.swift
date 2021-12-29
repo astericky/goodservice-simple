@@ -10,6 +10,10 @@ import SwiftUI
 
 final class StationViewModel: ObservableObject, Identifiable {
     @Published public var station: Stop
+    @Published public var stationDetail: StationDetailViewModel?
+    
+    private var goodServiceFetcher = GoodServiceFetcher()
+    private var disposables = Set<AnyCancellable>()
     
     var id: String {
         station.id
@@ -25,6 +29,28 @@ final class StationViewModel: ObservableObject, Identifiable {
     
     init(station: Stop) {
         self.station = station
+    }
+    
+    func fetchStationFromLocalData() {
+        goodServiceFetcher
+            .getStopFromLocalData()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] data in
+                guard let self = self else { return }
+                self.stationDetail = StationDetailViewModel(station: data)
+            })
+            .store(in: &disposables)
+    }
+    
+    func fetchStationFromAPI() {
+        goodServiceFetcher
+            .getStopFromAPI(using: station.id)
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { _ in }, receiveValue: { [weak self] data in
+                guard let self = self else { return }
+                self.stationDetail = StationDetailViewModel(station: data)
+            })
+            .store(in: &disposables)
     }
 }
 
