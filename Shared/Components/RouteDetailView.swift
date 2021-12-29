@@ -26,8 +26,6 @@ struct RouteDetailView: View {
             }
             Spacer()
         }
-        .foregroundColor(.white)
-        .background(.black)
         .onAppear(perform: self.getRouteDetail)
     }
 }

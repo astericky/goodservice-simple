@@ -34,6 +34,8 @@
 		3D56A102276FBB4600E65748 /* RouteDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */; };
 		3D56A104276FBB9F00E65748 /* RouteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */; };
 		3D56A106276FBEAA00E65748 /* route.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D56A105276FBEAA00E65748 /* route.json */; };
+		3D8AE493277C1F7400079C6B /* StationListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE492277C1F7400079C6B /* StationListTab.swift */; };
+		3D8AE495277C22FD00079C6B /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE494277C22FD00079C6B /* StationViewModel.swift */; };
 		3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */; };
 		3DF62F77272EEDE00053D299 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F76272EEDE00053D299 /* TestData.swift */; };
 		3DF62F79272EEE230053D299 /* routes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3DF62F78272EEE230053D299 /* routes.json */; };
@@ -41,7 +43,6 @@
 		3DF62F7D27337C340053D299 /* RoutesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F7C27337C340053D299 /* RoutesResponse.swift */; };
 		3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F7E27337F670053D299 /* StopsResponse.swift */; };
 		3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F80273382580053D299 /* GoodServiceError.swift */; };
-		3DF62F8327383FBD0053D299 /* TabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F8227383FBD0053D299 /* TabContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,8 @@
 		3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailResponse.swift; sourceTree = "<group>"; };
 		3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailViewModel.swift; sourceTree = "<group>"; };
 		3D56A105276FBEAA00E65748 /* route.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = route.json; sourceTree = "<group>"; };
+		3D8AE492277C1F7400079C6B /* StationListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListTab.swift; sourceTree = "<group>"; };
+		3D8AE494277C22FD00079C6B /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
 		3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceFetcher.swift; sourceTree = "<group>"; };
 		3DF62F76272EEDE00053D299 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 		3DF62F78272EEE230053D299 /* routes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = routes.json; sourceTree = "<group>"; };
@@ -95,7 +98,6 @@
 		3DF62F7C27337C340053D299 /* RoutesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutesResponse.swift; sourceTree = "<group>"; };
 		3DF62F7E27337F670053D299 /* StopsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsResponse.swift; sourceTree = "<group>"; };
 		3DF62F80273382580053D299 /* GoodServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceError.swift; sourceTree = "<group>"; };
-		3DF62F8227383FBD0053D299 /* TabContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				3D1DFD802763A6C80036DDAF /* RouteListTab.swift */,
+				3D8AE492277C1F7400079C6B /* StationListTab.swift */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 				3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */,
 				3D20AD2127543E6800DC288E /* RouteViewModel.swift */,
 				3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */,
+				3D8AE494277C22FD00079C6B /* StationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -187,7 +191,6 @@
 				3D20AD17274C656200DC288E /* Tabs */,
 				3D2D19F8272DC049008BF58D /* GoodServiceIO_SimpleApp.swift */,
 				3D2D19F9272DC049008BF58D /* ContentView.swift */,
-				3DF62F8227383FBD0053D299 /* TabContentView.swift */,
 				3D2D19FA272DC049008BF58D /* Persistence.swift */,
 				3D20AD1B274C65CF00DC288E /* ViewModels */,
 				3DF62F72272EEB830053D299 /* GoodServiceAPI */,
@@ -430,9 +433,10 @@
 				3D56A0FB276EA0CA00E65748 /* RouteDetailView.swift in Sources */,
 				3D2D1A27272DC04A008BF58D /* Persistence.swift in Sources */,
 				3D20AD2227543E6800DC288E /* RouteViewModel.swift in Sources */,
+				3D8AE493277C1F7400079C6B /* StationListTab.swift in Sources */,
 				3D2D1A21272DC04A008BF58D /* GoodServiceIO_Simple.xcdatamodeld in Sources */,
 				3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */,
-				3DF62F8327383FBD0053D299 /* TabContentView.swift in Sources */,
+				3D8AE495277C22FD00079C6B /* StationViewModel.swift in Sources */,
 				3DF62F77272EEDE00053D299 /* TestData.swift in Sources */,
 				3D1DFD812763A6C80036DDAF /* RouteListTab.swift in Sources */,
 				3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */,

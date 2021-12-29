@@ -11,7 +11,7 @@ import Combine
 protocol GoodServiceFetchable {
     func getRoutesFromLocalData() -> AnyPublisher<RoutesResponse, GoodServiceError>
     func getRoutesFromAPI() -> AnyPublisher<RoutesResponse, GoodServiceError>
-    func getStopsFromLocalData() -> StopsResponse
+    func getStopsFromLocalData() -> AnyPublisher<StopsResponse, GoodServiceError>
     func getStopsFromAPI() -> AnyPublisher<StopsResponse, GoodServiceError>
 }
 
@@ -71,8 +71,11 @@ extension GoodServiceFetcher: GoodServiceFetchable {
             .eraseToAnyPublisher()
     }
     
-    func getStopsFromLocalData() -> StopsResponse {
-        return load("stops.json")
+    func getStopsFromLocalData() -> AnyPublisher<StopsResponse, GoodServiceError> {
+        let stops: StopsResponse = load("stops.json")
+        return Just<StopsResponse>(stops)
+            .setFailureType(to: GoodServiceError.self)
+            .eraseToAnyPublisher()
     }
     
     func getStopsFromAPI() -> AnyPublisher<StopsResponse, GoodServiceError> {
