@@ -9,7 +9,7 @@ import SwiftUI
 
 struct StationListTab: View {
     @ObservedObject var viewModel: GoodServiceViewModel
-    var stationList: [StationViewModel] {
+    var stations: [StationViewModel] {
         viewModel.stations
     }
     var body: some View {
@@ -17,13 +17,8 @@ struct StationListTab: View {
             VStack {
                 GoodServiceHeaderView()
                     .frame(width: proxy.size.width)
-                ScrollView(.vertical) {
-                    VStack {
-                        Text("Station List Tab")
-                        ForEach(stationList, id: \.self) { station in
-                            Text(station.id)
-                        }
-                    }
+                List(stations) { station in
+                    Text(station.name)
                 }
             }
         }
