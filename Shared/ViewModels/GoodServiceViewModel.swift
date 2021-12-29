@@ -27,6 +27,7 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
         self.goodServiceFetcher = goodServiceFetcher
 #if DEBUG
         fetchRoutesFromLocalData()
+        fetchStationsFromLocalData()
 #else
         fetchRoutesFromAPI()
 #endif
@@ -75,7 +76,7 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
         })
     }
     
-    func fetchStopsFromLocalData() {
+    func fetchStationsFromLocalData() {
         goodServiceFetcher
             .getStopsFromLocalData()
             .receive(on: DispatchQueue.main)
@@ -84,5 +85,6 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
                 let newStations = data.stops.map(StationViewModel.init)
                 self.stations = newStations
             })
+            .store(in: &disposables)
     }
 }

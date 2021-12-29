@@ -27,3 +27,15 @@ final class StationViewModel: ObservableObject, Identifiable {
         self.station = station
     }
 }
+
+// Used to conform to the protocal Hashable with gives one the ability to
+// differentiate between one item compared to another item
+extension StationViewModel: Hashable {
+  static func == (lhs: StationViewModel, rhs: StationViewModel) -> Bool {
+    return lhs.id == rhs.id
+  }
+  
+  func hash(into hasher: inout Hasher) {
+    hasher.combine(self.name)
+  }
+}

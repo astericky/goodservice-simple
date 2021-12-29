@@ -9,7 +9,9 @@ import SwiftUI
 
 struct StationListTab: View {
     @ObservedObject var viewModel: GoodServiceViewModel
-//    var stationList
+    var stationList: [StationViewModel] {
+        viewModel.stations
+    }
     var body: some View {
         GeometryReader { proxy in
             VStack {
@@ -18,9 +20,9 @@ struct StationListTab: View {
                 ScrollView(.vertical) {
                     VStack {
                         Text("Station List Tab")
-//                        ForEach(statusList, id: \.self) { status in
-//                            RouteStatusView(viewModel: viewModel, status: status)
-//                        }
+                        ForEach(stationList, id: \.self) { station in
+                            Text(station.id)
+                        }
                     }
                 }
             }
