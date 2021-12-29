@@ -91,7 +91,6 @@ extension GoodServiceFetcher: GoodServiceFetchable {
                 return .network(description: error.localizedDescription)
             }
             .eraseToAnyPublisher()
-
     }
     
     func getStopFromLocalData() -> AnyPublisher<StopDetailResponse, GoodServiceError> {

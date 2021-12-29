@@ -13,15 +13,13 @@ struct StationListTab: View {
         viewModel.stations
     }
     var body: some View {
-        GeometryReader { proxy in
-            VStack {
-                GoodServiceHeaderView()
-                    .frame(width: proxy.size.width)
-                List(stations) { station in
-                    Text(station.name)
-                }
+        List(stations) { station in
+            NavigationLink(destination: StationDetailView()) {
+                Text(station.name)
             }
         }
+        .navigationTitle("Stations")
+        .listStyle(.inset)
     }
 }
 

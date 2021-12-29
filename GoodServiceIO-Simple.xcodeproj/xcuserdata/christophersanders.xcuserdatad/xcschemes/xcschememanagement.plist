@@ -7,14 +7,9 @@
 		<key>GoodServiceIO-Simple (iOS) - release.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>GoodServiceIO-Simple (iOS).xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>GoodServiceIO-Simple (macOS).xcscheme_^#shared#^_</key>
+		<key>GoodServiceIO-Simple (iOS).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -27,7 +22,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3D2D1A05272DC04A008BF58D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>3D2D1A0C272DC04A008BF58D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3D2D1A18272DC04A008BF58D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

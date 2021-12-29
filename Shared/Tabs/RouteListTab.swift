@@ -14,19 +14,11 @@ struct RouteListTab: View {
     }
 
     var body: some View {
-        GeometryReader { proxy in
-            VStack {
-                GoodServiceHeaderView()
-                    .frame(width: proxy.size.width)
-                ScrollView(.vertical) {
-                    VStack {
-                        ForEach(statusList, id: \.self) { status in
-                            RouteStatusView(viewModel: viewModel, status: status)
-                        }
-                    }
-                }
-            }
+        List(statusList, id: \.self) { status in
+            RouteStatusView(viewModel: viewModel, status: status)
         }
+        .listStyle(.plain)
+        .navigationTitle("Trains")
     }
 }
 

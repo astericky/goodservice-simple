@@ -13,13 +13,16 @@ struct RouteStatusView: View {
     var statusColor: Color {
         Color("color-" + status.lowercased().replacingOccurrences(of: " ", with: "-"))
     }
+    var statusForegroundColor: Color {
+        status != "Not Scheduled" ? statusColor : Color.black
+    }
 
     var body: some View {
         VStack {
             statusTitle
             horizontalList
         }
-        .padding(.init(top: 16, leading: 16, bottom: 16, trailing: 16))
+        .padding()
     }
 }
 
@@ -27,9 +30,10 @@ extension RouteStatusView {
     var statusTitle: some View {
         HStack {
             Text(status)
-                .foregroundColor(statusColor)
+                .textCase(.uppercase)
+                .foregroundColor(statusForegroundColor)
             Spacer()
-        }.padding(.init(top: 8, leading: 0, bottom: 0, trailing: 8))
+        }
     }
     
     var horizontalList: some View {
@@ -40,7 +44,6 @@ extension RouteStatusView {
                 EmptyView()
             }
         }
-        .padding(.init(top: 0, leading: 0, bottom: 8, trailing: 0))
     }
 }
 
@@ -56,7 +59,7 @@ struct RouteStatusView_Previews: PreviewProvider {
     static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
         Group {
-            RouteStatusView(viewModel: viewModel, status: "No Service")
+            RouteStatusView(viewModel: viewModel, status: "Good Service")
                 .previewLayout(.sizeThatFits)
         }
     }
