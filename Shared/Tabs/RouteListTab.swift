@@ -23,8 +23,7 @@ struct RouteListTab: View {
 }
 
 struct RouteListTab_Previews: PreviewProvider {
-    static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
-        RouteListTab(viewModel: viewModel)
+        RouteListTab(viewModel: GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher()))
     }
 }

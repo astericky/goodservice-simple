@@ -14,6 +14,10 @@ final class RouteDetailViewModel: ObservableObject {
         route.serviceChangeSummaries
     }
     
+    var serviceIrregularitySummaries: [String: String] {
+        route.serviceIrregularitySummaries
+    }
+    
     init(route: RouteDetailResponse) {
         self.route = route
     }

@@ -48,6 +48,11 @@ final class RouteViewModel: ObservableObject, Identifiable {
         self.route = route
     }
     
+    init(route: Route, routeDetail: RouteDetailViewModel) {
+        self.route = route
+        self.routeDetail = routeDetail
+    }
+    
     func fetchRouteDetailFromLocalData() {
         goodServiceFetcher
             .getRouteFromLocalData()

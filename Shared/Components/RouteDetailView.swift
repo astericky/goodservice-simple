@@ -24,6 +24,12 @@ struct RouteDetailView: View {
                 }
                 
             }
+            
+            if let serviceIrregularitySummaries = route.routeDetail?.serviceIrregularitySummaries,
+               let _ = serviceIrregularitySummaries["north"],
+               let _ = serviceIrregularitySummaries["south"] {
+                ServiceIrregularitySummariesView(route: route)
+            }
             Spacer()
         }
         .onAppear(perform: self.getRouteDetail)
@@ -57,53 +63,8 @@ extension RouteDetailView {
     }
 }
 
-struct ServiceChangeSummariesView: View {
-    @ObservedObject var route: RouteViewModel
-    
-    var body: some View {
-        VStack {
-            HStack {
-                Spacer()
-                Text("Service Changes")
-                    .font(.system(size: 12, weight: .bold, design: .default))
-                    .textCase(.uppercase)
-                Spacer()
-            }
-            .padding(.vertical, 6)
-            .background(Color.serviceChange)
-            
-            if let bothServiceChange = route.routeDetail?.serviceChangeSummaries["both"] {
-                ForEach(bothServiceChange, id: \.self) { serviceChangeSummary in
-                    HStack {
-                        Text(serviceChangeSummary)
-                            .font(.caption)
-                    }.padding(4)
-                }
-            }
-            
-            if let northServiceChange = route.routeDetail?.serviceChangeSummaries["north"] {
-                ForEach(northServiceChange, id: \.self) { serviceChangeSummary in
-                    HStack {
-                        Text(serviceChangeSummary)
-                            .font(.caption)
-                    }.padding(4)
-                }
-            }
-            
-            if let southServiceChagne = route.routeDetail?.serviceChangeSummaries["south"] {
-                ForEach(southServiceChagne, id: \.self) { serviceChangeSummary in
-                    HStack {
-                        Text(serviceChangeSummary)
-                            .font(.caption)
-                    }.padding(4)
-                }
-            }
-        }.padding(.vertical, 16)
-    }
-}
-
 struct RouteDetailView_Previews: PreviewProvider {
-    static var routeViewModel = RouteViewModel(route: routeA)
+    static var routeViewModel = RouteViewModel(route: route1)
     static var previews: some View {
         RouteDetailView(route: routeViewModel)
     }

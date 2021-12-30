@@ -17,6 +17,7 @@ struct RouteDetailResponse: Codable {
     let visible: Bool
     let scheduled: Bool
     let serviceChangeSummaries: [String: [String]]
+    let serviceIrregularitySummaries: [String: String]
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -28,5 +29,6 @@ struct RouteDetailResponse: Codable {
         case visible
         case scheduled
         case serviceChangeSummaries = "service_change_summaries"
+        case serviceIrregularitySummaries = "service_irregularity_summaries"
     }
 }

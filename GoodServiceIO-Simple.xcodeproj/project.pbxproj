@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3D0362302765139B0026ED8B /* RouteStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D03622F2765139B0026ED8B /* RouteStatusView.swift */; };
 		3D0362322765BBC80026ED8B /* GoodServiceHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0362312765BBC80026ED8B /* GoodServiceHeaderView.swift */; };
+		3D05CCD0277E1C5C007442F8 /* ServiceChangeSummariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05CCCF277E1C5C007442F8 /* ServiceChangeSummariesView.swift */; };
+		3D05CCD2277E2235007442F8 /* ServiceIrregularitySummariesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05CCD1277E2235007442F8 /* ServiceIrregularitySummariesView.swift */; };
 		3D1DFD812763A6C80036DDAF /* RouteListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1DFD802763A6C80036DDAF /* RouteListTab.swift */; };
 		3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */; };
 		3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */; };
@@ -25,8 +27,6 @@
 		3D2D1A24272DC04A008BF58D /* GoodServiceIO_SimpleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D19F8272DC049008BF58D /* GoodServiceIO_SimpleApp.swift */; };
 		3D2D1A25272DC04A008BF58D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D19F9272DC049008BF58D /* ContentView.swift */; };
 		3D2D1A26272DC04A008BF58D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D19F9272DC049008BF58D /* ContentView.swift */; };
-		3D2D1A27272DC04A008BF58D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D19FA272DC049008BF58D /* Persistence.swift */; };
-		3D2D1A28272DC04A008BF58D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D2D19FA272DC049008BF58D /* Persistence.swift */; };
 		3D2D1A29272DC04A008BF58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2D19FB272DC04A008BF58D /* Assets.xcassets */; };
 		3D2D1A2A272DC04A008BF58D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2D19FB272DC04A008BF58D /* Assets.xcassets */; };
 		3D56A0FB276EA0CA00E65748 /* RouteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A0FA276EA0CA00E65748 /* RouteDetailView.swift */; };
@@ -69,6 +69,8 @@
 /* Begin PBXFileReference section */
 		3D03622F2765139B0026ED8B /* RouteStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteStatusView.swift; sourceTree = "<group>"; };
 		3D0362312765BBC80026ED8B /* GoodServiceHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceHeaderView.swift; sourceTree = "<group>"; };
+		3D05CCCF277E1C5C007442F8 /* ServiceChangeSummariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceChangeSummariesView.swift; sourceTree = "<group>"; };
+		3D05CCD1277E2235007442F8 /* ServiceIrregularitySummariesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceIrregularitySummariesView.swift; sourceTree = "<group>"; };
 		3D1DFD802763A6C80036DDAF /* RouteListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteListTab.swift; sourceTree = "<group>"; };
 		3D20AD19274C65B200DC288E /* HorizontalRouteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalRouteListView.swift; sourceTree = "<group>"; };
 		3D20AD1C274C664D00DC288E /* GoodServiceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceViewModel.swift; sourceTree = "<group>"; };
@@ -77,7 +79,6 @@
 		3D2D19F7272DC049008BF58D /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		3D2D19F8272DC049008BF58D /* GoodServiceIO_SimpleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceIO_SimpleApp.swift; sourceTree = "<group>"; };
 		3D2D19F9272DC049008BF58D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		3D2D19FA272DC049008BF58D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3D2D19FB272DC04A008BF58D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D2D1A00272DC04A008BF58D /* GoodServiceIO-Simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodServiceIO-Simple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D2D1A06272DC04A008BF58D /* GoodServiceIO-Simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GoodServiceIO-Simple.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +160,8 @@
 				3D56A0FA276EA0CA00E65748 /* RouteDetailView.swift */,
 				3D56A0FD276F8FA600E65748 /* RouteIconView.swift */,
 				3D8AE49C277C479800079C6B /* StationDetailView.swift */,
+				3D05CCCF277E1C5C007442F8 /* ServiceChangeSummariesView.swift */,
+				3D05CCD1277E2235007442F8 /* ServiceIrregularitySummariesView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -197,11 +200,10 @@
 		3D2D19F5272DC049008BF58D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				3D20AD18274C657400DC288E /* Components */,
-				3D20AD17274C656200DC288E /* Tabs */,
 				3D2D19F8272DC049008BF58D /* GoodServiceIO_SimpleApp.swift */,
 				3D2D19F9272DC049008BF58D /* ContentView.swift */,
-				3D2D19FA272DC049008BF58D /* Persistence.swift */,
+				3D20AD17274C656200DC288E /* Tabs */,
+				3D20AD18274C657400DC288E /* Components */,
 				3D20AD1B274C65CF00DC288E /* ViewModels */,
 				3DF62F72272EEB830053D299 /* GoodServiceAPI */,
 				3D20AD1E27542B3800DC288E /* Utils */,
@@ -444,18 +446,19 @@
 			files = (
 				3D2D1A23272DC04A008BF58D /* GoodServiceIO_SimpleApp.swift in Sources */,
 				3D56A0FB276EA0CA00E65748 /* RouteDetailView.swift in Sources */,
-				3D2D1A27272DC04A008BF58D /* Persistence.swift in Sources */,
 				3D8AE49B277C2EBC00079C6B /* StopDetailResponse.swift in Sources */,
 				3D20AD2227543E6800DC288E /* RouteViewModel.swift in Sources */,
 				3D8AE493277C1F7400079C6B /* StationListTab.swift in Sources */,
 				3D2D1A21272DC04A008BF58D /* GoodServiceIO_Simple.xcdatamodeld in Sources */,
 				3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */,
+				3D05CCD2277E2235007442F8 /* ServiceIrregularitySummariesView.swift in Sources */,
 				3D8AE495277C22FD00079C6B /* StationViewModel.swift in Sources */,
 				3DF62F77272EEDE00053D299 /* TestData.swift in Sources */,
 				3D1DFD812763A6C80036DDAF /* RouteListTab.swift in Sources */,
 				3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */,
 				3D20AD1D274C664D00DC288E /* GoodServiceViewModel.swift in Sources */,
 				3D56A0FE276F8FA600E65748 /* RouteIconView.swift in Sources */,
+				3D05CCD0277E1C5C007442F8 /* ServiceChangeSummariesView.swift in Sources */,
 				3D20AD2027542B4300DC288E /* Extensions.swift in Sources */,
 				3D56A104276FBB9F00E65748 /* RouteDetailViewModel.swift in Sources */,
 				3DF62F81273382580053D299 /* GoodServiceError.swift in Sources */,
@@ -475,7 +478,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D2D1A24272DC04A008BF58D /* GoodServiceIO_SimpleApp.swift in Sources */,
-				3D2D1A28272DC04A008BF58D /* Persistence.swift in Sources */,
 				3D2D1A22272DC04A008BF58D /* GoodServiceIO_Simple.xcdatamodeld in Sources */,
 				3D2D1A26272DC04A008BF58D /* ContentView.swift in Sources */,
 			);
