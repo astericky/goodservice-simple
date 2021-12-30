@@ -22,7 +22,7 @@ struct RouteStatusView: View {
             statusTitle
             horizontalList
         }
-        .padding()
+        .padding(.init(top: 16, leading: 0, bottom: 16, trailing: 16))
     }
 }
 

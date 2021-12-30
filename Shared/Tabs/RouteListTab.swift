@@ -14,11 +14,13 @@ struct RouteListTab: View {
     }
 
     var body: some View {
-        List(statusList, id: \.self) { status in
-            RouteStatusView(viewModel: viewModel, status: status)
+        NavigationView {
+            List(statusList, id: \.self) { status in
+                RouteStatusView(viewModel: viewModel, status: status)
+            }
+            .listStyle(.plain)
+            .navigationTitle("Trains")
         }
-        .listStyle(.plain)
-        .navigationTitle("Trains")
     }
 }
 

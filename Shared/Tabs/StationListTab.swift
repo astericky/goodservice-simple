@@ -13,13 +13,15 @@ struct StationListTab: View {
         viewModel.stations
     }
     var body: some View {
-        List(stations) { station in
-            NavigationLink(destination: StationDetailView()) {
-                Text(station.name)
+        NavigationView {
+            List(stations) { station in
+                NavigationLink(destination: StationDetailView()) {
+                    Text(station.name)
+                }
             }
+            .listStyle(.inset)
+            .navigationTitle("Stations")
         }
-        .navigationTitle("Stations")
-        .listStyle(.inset)
     }
 }
 

@@ -18,6 +18,7 @@ let serviceIrregularitySummaries = [
     "south": "Flatbush Av - Brooklyn College-bound trains are having longer wait times between Wakefield - 241 St and Franklin Av - Medgar Evers College (up to 20 mins, normally every 9 mins)."
 ]
 let route1 = Route(id: "A", name: "A", color: "#0000FF", textColor: "#FFFFFF", alternateName: "Leftert's Blvd", status: "Good Service", visible: true, scheduled: true)
+let routeSIR = Route(id: "SIR", name: "SIR", color: "#0000FF", textColor: "#FFFFFF", alternateName: "Leftert's Blvd", status: "Good Service", visible: true, scheduled: true)
 let routeA = Route(id: "1", name: "1", color: "#FF0000", textColor: "#FFFFFF", alternateName: nil, status: "Not Good Service", visible: true, scheduled: true)
 let routeN = Route(id: "N", name: "N", color: "#fbbd08", textColor: "#000000", alternateName: nil, status: "Delayed Service", visible: true, scheduled: true)
 let routeS = Route(id: "GS", name: "S", color: "#767676", textColor: "#FFFFFF", alternateName: "42 St Shuttle", status: "Service Change", visible: true, scheduled: true)

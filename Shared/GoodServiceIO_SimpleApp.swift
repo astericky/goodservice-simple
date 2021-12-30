@@ -12,9 +12,7 @@ struct GoodServiceIO_SimpleApp: App {
 
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+            ContentView()
         }
     }
 }
