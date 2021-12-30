@@ -22,7 +22,6 @@ struct RouteDetailView: View {
                 if !bothServiceChangeSummaries.isEmpty || !northServiceChangeSummaries.isEmpty || !southServiceChangeSummaries.isEmpty {
                     ServiceChangeSummariesView(route: route)
                 }
-                
             }
             
             if let serviceIrregularitySummaries = route.routeDetail?.serviceIrregularitySummaries,
@@ -30,6 +29,7 @@ struct RouteDetailView: View {
                let _ = serviceIrregularitySummaries["south"] {
                 ServiceIrregularitySummariesView(route: route)
             }
+
             Spacer()
         }
         .onAppear(perform: self.getRouteDetail)
@@ -39,10 +39,11 @@ struct RouteDetailView: View {
 extension RouteDetailView {
     var title: some View {
         HStack {
+            Spacer()
             RouteIconView(route: route, size: 80)
             Spacer()
         }
-        .padding(.horizontal)
+        .padding()
     }
     var status: some View {
         VStack {
@@ -50,7 +51,6 @@ extension RouteDetailView {
                 .font(.title)
                 .foregroundColor(route.statusColor)
             Text("STATUS")
-                .foregroundColor(.white)
         }
     }
     
