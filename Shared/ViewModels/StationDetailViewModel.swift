@@ -18,7 +18,11 @@ final class StationDetailViewModel: ObservableObject {
         station.name
     }
     
-    var upComingTrips: [String: [Trip]] {
+    var secondaryName: String {
+        station.secondaryName
+    }
+    
+    var upcomingTrips: [String: [Trip]] {
         station.upcomingTrips
     }
     

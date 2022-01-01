@@ -31,6 +31,11 @@ final class StationViewModel: ObservableObject, Identifiable {
         self.station = station
     }
     
+    init(station: Stop, stationDetail: StationDetailViewModel) {
+        self.station = station
+        self.stationDetail = stationDetail
+    }
+    
     func fetchStationFromLocalData() {
         goodServiceFetcher
             .getStopFromLocalData()

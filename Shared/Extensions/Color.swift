@@ -1,19 +1,11 @@
 //
-//  Extensions.swift
+//  Color.swift
 //  GoodServiceIO-Simple (iOS)
 //
-//  Created by Christopher Sanders on 11/28/21.
+//  Created by Christopher Sanders on 12/31/21.
 //
 
-import Foundation
-
 import SwiftUI
-
-extension Double {
-    func format(f: Int) -> String {
-        return String(format: "%.\(f)f", self)
-    }
-}
 
 extension Color {
     static let lightInvertedBlue = Color(red:0.33, green:0.78, blue:1.00)
