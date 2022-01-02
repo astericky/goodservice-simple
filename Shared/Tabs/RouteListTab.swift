@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct RouteListTab: View {
+
     @EnvironmentObject var vm: GoodServiceViewModel
+
     var statusList: [String] {
         Array<String>(vm.routesByStatus.keys)
     }

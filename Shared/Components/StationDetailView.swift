@@ -13,7 +13,7 @@ struct StationDetailView: View {
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var vm: GoodServiceViewModel
     @ObservedObject var station: StationViewModel
-
+    
     var connectingRoutes: [RouteViewModel] {
         return station.routes.map { name in
             vm.getRoute(by: name)!
@@ -25,6 +25,15 @@ struct StationDetailView: View {
             header
             upcomingTrainTimes
         }.navigationBarHidden(true)
+    }
+    
+    init(station: StationViewModel) {
+        self.station = station
+#if DEBUG
+        station.fetchStationFromLocalData()
+#else
+        station.fetchStationFromAPI()
+#endif
     }
 }
 
@@ -49,10 +58,10 @@ extension StationDetailView {
                     RouteIconView(route: route)
                 }
                 Spacer()
-
+                
             }
             HStack {
-                Text("World Trade Center")
+                Text(station.stationDetail?.secondaryName ?? "")
                     .font(.caption)
                     .foregroundColor(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
                 Spacer()
@@ -63,48 +72,58 @@ extension StationDetailView {
     
     private var upcomingTrainTimes: some View {
         GeometryReader { proxy in
+            let width = proxy.size.width
+            let largeColumnWidth = (proxy.size.width - 32) * 0.3
+            let smallColumnWidth = (proxy.size.width - 32) * 0.2
             VStack {
                 Text("Upcoming Train Times")
                     .bold()
+                    .padding(.bottom, 8)
+                Text("To Court Sq, Jamica-179st")
+                    .font(.system(size: 16))
+                    .padding(.leading, 16)
+                    .frame(width: width, alignment: .leading)
                 List {
-                    Section(header: Text("To Court Sq, Jamica-179st")) {
+                    //                    Section(header: Text("To Court Sq, Jamica-179st")) {
+                    HStack {
+                        Text("Train ID / Destination")
+                            .frame(width: largeColumnWidth, alignment: .leading)
+                        Spacer()
+                        Text("Projected Time")
+                            .frame(width: smallColumnWidth, alignment: .leading)
+                        Spacer()
+                        Text("Current Location")
+                            .frame(width: smallColumnWidth, alignment: .leading)
+                        Spacer()
+                        Text("Schedule Adherence")
+                            .frame(width: smallColumnWidth, alignment: .trailing)
+                    }.font(.caption)
+                    ForEach(0 ..< 10) { trip in
                         HStack {
-                            Text("Train ID / Destination")
-                                .frame(width: proxy.size.width * 0.3)
+                            Text("12345_1..2 to 96 St")
+                                .font(.system(size: 14, weight: .regular, design: .default))
+                                .frame(width: largeColumnWidth, alignment: .leading)
                             Spacer()
-                            Text("Projected Time")
-                                .frame(width: proxy.size.width * 0.2)
+                            Text("2 min")
+                                .frame(width: smallColumnWidth, alignment: .leading)
                             Spacer()
-                            Text("Current Location")
-                                .frame(width: proxy.size.width * 0.2)
+                            Text("1 min until 7 Av")
+                                .frame(width: smallColumnWidth, alignment: .leading)
                             Spacer()
-                            Text("Schedule Adherence")
-                                .frame(width: proxy.size.width * 0.2)
-                        }.font(.caption)
-                        ForEach(0 ..< 10) { trip in
-                            HStack {
-                                Text("12345_1..2 to 96 St")
-                                    .frame(width: proxy.size.width * 0.3)
-                                Spacer()
-                                Text("2 min")
-                                    .frame(width: proxy.size.width * 0.2)
-                                Spacer()
-                                Text("1 min until 7 Av")
-                                    .frame(width: proxy.size.width * 0.2)
-                                Spacer()
-                                Text("10 min")
-                                    .frame(width: proxy.size.width * 0.2)
-                            }.font(.callout)
-                            
-                        }
+                            Text("10 min")
+                                .frame(width: smallColumnWidth, alignment: .trailing)
+                        }.font(.callout)
+                        
                     }
+                    //                    }
                 }
                 .listStyle(PlainListStyle())
             }
         }
-        
     }
+    
 }
+
 
 struct StationDetailView_Previews: PreviewProvider {
     static var stop = Stop(id: "E01", name: "World Trade Center", routes: [
@@ -127,6 +146,5 @@ struct StationDetailView_Previews: PreviewProvider {
     static var previews: some View {
         StationDetailView(station: station)
             .environmentObject(vm)
-//        StationDetailView(station: station, viewModel: viewModel)
     }
 }
