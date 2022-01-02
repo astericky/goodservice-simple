@@ -8,15 +8,15 @@
 import SwiftUI
 
 struct RouteListTab: View {
-    @ObservedObject var viewModel: GoodServiceViewModel
+    @EnvironmentObject var vm: GoodServiceViewModel
     var statusList: [String] {
-        Array<String>(viewModel.routesByStatus.keys)
+        Array<String>(vm.routesByStatus.keys)
     }
 
     var body: some View {
         NavigationView {
             List(statusList, id: \.self) { status in
-                RouteStatusView(viewModel: viewModel, status: status)
+                RouteStatusView(viewModel: vm, status: status)
             }
             .listStyle(.plain)
             .navigationTitle("Trains")
@@ -26,6 +26,7 @@ struct RouteListTab: View {
 
 struct RouteListTab_Previews: PreviewProvider {
     static var previews: some View {
-        RouteListTab(viewModel: GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher()))
+        RouteListTab()
+            .environmentObject(GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher()))
     }
 }

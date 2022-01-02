@@ -9,27 +9,29 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @StateObject private var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
+    @EnvironmentObject private var vm: GoodServiceViewModel
     
     var body: some View {
         TabView {
-            RouteListTab(viewModel: viewModel)
+            RouteListTab()
                 .tabItem {
                     Image("subway")
                     Text("Trains")
                 }
-            StationListTab(viewModel: viewModel)
+            StationListTab()
                 .tabItem {
                     Image("railway")
                     Text("Stations")
                 }
         }
     }
-    
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView()
+                .environmentObject(GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher()))
+        }
     }
 }

@@ -100,4 +100,8 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
             })
             .store(in: &disposables)
     }
+    
+    func getRoute(by name: String) -> RouteViewModel? {
+        routes.first(where: { $0.name == name})
+    }
 }

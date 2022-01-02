@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct StationListTab: View {
-    @ObservedObject var viewModel: GoodServiceViewModel
+    @EnvironmentObject var vm: GoodServiceViewModel
+    
     var stations: [StationViewModel] {
-        viewModel.stations
+        vm.stations
     }
+
     var body: some View {
         NavigationView {
             List(stations) { station in
-                NavigationLink(destination: StationDetailView()) {
+                NavigationLink(destination: StationDetailView(station: station)) {
                     Text(station.name)
                 }
             }
@@ -26,8 +28,8 @@ struct StationListTab: View {
 }
 
 struct StationListTab_Previews: PreviewProvider {
-    static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
-        StationListTab(viewModel: viewModel)
+        StationListTab()
+            .environmentObject(GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher()))
     }
 }

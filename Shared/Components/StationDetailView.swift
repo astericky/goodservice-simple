@@ -9,20 +9,22 @@ import SwiftUI
 import WrappingHStack
 
 struct StationDetailView: View {
-//    @ObservedObject var station: StationViewModel
-//    @ObservedObject var viewModel: GoodServiceViewModel
-//
-//    var connectingRoutes: [RouteViewModel] {
-//        return station.routes.map { name in
-//            viewModel.routes.filter { $0.name == name }[0]
-//        }
-//    }
+    
+    @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var vm: GoodServiceViewModel
+    @ObservedObject var station: StationViewModel
+
+    var connectingRoutes: [RouteViewModel] {
+        return station.routes.map { name in
+            vm.getRoute(by: name)!
+        }
+    }
     
     var body: some View {
         VStack {
             header
             upcomingTrainTimes
-        }
+        }.navigationBarHidden(true)
     }
 }
 
@@ -30,21 +32,33 @@ extension StationDetailView {
     private var header: some View {
         VStack {
             HStack {
-                Text("1 Ave")
-                    .font(.headline)
-                ForEach(["A", "E", "F"], id: \.self) { routeName in
-                    RouteIconView(route: RouteViewModel(route: routeA))
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    HStack {
+                        Image(systemName: "arrow.left.circle")
+                        Text("Stations")
+                    }
                 }
-//                HorizontalRouteListView(routes: connectingRoutes)
+                Spacer()
+            }
+            HStack {
+                Text(station.name)
+                    .font(.headline)
+                ForEach(connectingRoutes) { route in
+                    RouteIconView(route: route)
+                }
                 Spacer()
 
-            }.padding(.bottom, -4)
+            }
             HStack {
                 Text("World Trade Center")
-                    .font(.callout)
+                    .font(.caption)
+                    .foregroundColor(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
                 Spacer()
             }
         }.padding()
+            .padding(.top, 0)
     }
     
     private var upcomingTrainTimes: some View {
@@ -109,9 +123,10 @@ struct StationDetailView_Previews: PreviewProvider {
     ], timestamp: 1640756653)
     static var stationDetail = StationDetailViewModel(station: stopDetailResponse)
     static var station = StationViewModel(station: stop, stationDetail: stationDetail)
-    static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
+    static var vm = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
-        StationDetailView()
+        StationDetailView(station: station)
+            .environmentObject(vm)
 //        StationDetailView(station: station, viewModel: viewModel)
     }
 }
