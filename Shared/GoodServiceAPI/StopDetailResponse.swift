@@ -314,12 +314,16 @@ import Foundation
 struct Trip: Codable, Identifiable {
     let id: String
     let routeId: String
+    let upcomingStop: String
     let upcomingStopArrivalTime: Double
+    let destinationStop: String
     
     enum CodingKeys: String, CodingKey {
         case id
         case routeId = "route_id"
+        case upcomingStop = "upcoming_stop"
         case upcomingStopArrivalTime = "upcoming_stop_arrival_time"
+        case destinationStop = "destination_stop"
     }
 }
 
@@ -327,7 +331,8 @@ extension Trip {
     var arrivalTime: String {
         let newDate = Date(timeIntervalSince1970: upcomingStopArrivalTime)
         let formatter = DateFormatter()
-        formatter.dateFormat = "hh:mm"
+        formatter.dateFormat = "hh:mm a"
+        formatter.timeZone = TimeZone(abbreviation: "EST")
         return formatter.string(from: newDate)
     }
 }

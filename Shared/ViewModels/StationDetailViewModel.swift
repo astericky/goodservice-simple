@@ -22,17 +22,31 @@ final class StationDetailViewModel: ObservableObject {
         station.secondaryName
     }
     
-    var upcomingTrips: [String: [Trip]] {
-        station.upcomingTrips
+    var upcomingTrips: [String: [TrainViewModel]] {
+        let northArray = station.upcomingTrips["north"]
+        let north = northArray.map({
+            $0.map({
+                TrainViewModel(trip: $0)
+            })
+        })
+        let south = station.upcomingTrips["south"].map({
+            $0.map({
+                TrainViewModel(trip: $0)
+            })
+        })
+        return [
+            "north": north ?? [],
+            "south": south ?? [],
+        ]
     }
     
-    var projectedTime: String {
-        "10 Min"
-    }
-    
-    var currentLocation: String {
-        "3 min until 34th Street"
-    }
+//    var projectedTime: String {
+//        "10 Min"
+//    }
+//    
+//    var currentLocation: String {
+//        "3 min until 34th Street"
+//    }
     
     init(station: StopDetailResponse) {
         self.station = station

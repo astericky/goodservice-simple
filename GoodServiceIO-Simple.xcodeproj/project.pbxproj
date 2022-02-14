@@ -39,6 +39,7 @@
 		3D8AE499277C2E7100079C6B /* stop.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D8AE498277C2E7100079C6B /* stop.json */; };
 		3D8AE49B277C2EBC00079C6B /* StopDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE49A277C2EBC00079C6B /* StopDetailResponse.swift */; };
 		3D8AE49D277C479800079C6B /* StationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE49C277C479800079C6B /* StationDetailView.swift */; };
+		3DB6C08527B8321A00CFEBC7 /* TrainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB6C08427B8321A00CFEBC7 /* TrainViewModel.swift */; };
 		3DCCD09E277F706900149D52 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCCD09D277F706900149D52 /* Color.swift */; };
 		3DCCD0A0277F709100149D52 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCCD09F277F709100149D52 /* Double.swift */; };
 		3DF62F74272EEBDA0053D299 /* GoodServiceFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */; };
@@ -100,6 +101,7 @@
 		3D8AE498277C2E7100079C6B /* stop.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = stop.json; sourceTree = "<group>"; };
 		3D8AE49A277C2EBC00079C6B /* StopDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopDetailResponse.swift; sourceTree = "<group>"; };
 		3D8AE49C277C479800079C6B /* StationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailView.swift; sourceTree = "<group>"; };
+		3DB6C08427B8321A00CFEBC7 /* TrainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainViewModel.swift; sourceTree = "<group>"; };
 		3DCCD09D277F706900149D52 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		3DCCD09F277F709100149D52 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		3DF62F73272EEBDA0053D299 /* GoodServiceFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodServiceFetcher.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */,
 				3D8AE494277C22FD00079C6B /* StationViewModel.swift */,
 				3D8AE496277C2CA300079C6B /* StationDetailViewModel.swift */,
+				3DB6C08427B8321A00CFEBC7 /* TrainViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -456,6 +459,7 @@
 				3DCCD0A0277F709100149D52 /* Double.swift in Sources */,
 				3D20AD1A274C65B200DC288E /* HorizontalRouteListView.swift in Sources */,
 				3D05CCD2277E2235007442F8 /* ServiceIrregularitySummariesView.swift in Sources */,
+				3DB6C08527B8321A00CFEBC7 /* TrainViewModel.swift in Sources */,
 				3D8AE495277C22FD00079C6B /* StationViewModel.swift in Sources */,
 				3DF62F77272EEDE00053D299 /* TestData.swift in Sources */,
 				3D1DFD812763A6C80036DDAF /* RouteListTab.swift in Sources */,
