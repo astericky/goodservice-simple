@@ -25,13 +25,13 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
     init(goodServiceFetcher: GoodServiceFetcher,
          scheduler: DispatchQueue = DispatchQueue(label: "GoodServiceViewModel")) {
         self.goodServiceFetcher = goodServiceFetcher
-#if DEBUG
-        fetchRoutesFromLocalData()
-        fetchStationsFromLocalData()
-#else
+//#if DEBUG
+//        fetchRoutesFromLocalData()
+//        fetchStationsFromLocalData()
+//#else
         fetchRoutesFromAPI()
         fetchStationsFromAPI()
-#endif
+//#endif
     }
     
     func fetchRoutesFromAPI() {

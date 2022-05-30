@@ -335,6 +335,21 @@ extension Trip {
         formatter.timeZone = TimeZone(abbreviation: "EST")
         return formatter.string(from: newDate)
     }
+    
+    var minutesFromUpcomingStop: String {
+        let newDate = Date(timeIntervalSince1970: upcomingStopArrivalTime)
+        let currentDate = Date()
+        let difference = newDate.timeIntervalSince(currentDate)
+        let totalSeconds = Int(difference.rounded())
+        let minutes = Int(totalSeconds / 60)
+        
+//        let formatter = DateFormatter()
+//        formatter.dateFormat = "hh:mm"
+//        formatter.timeZone = TimeZone(abbreviation: "EST")
+//
+//        formatter.string(from: difference)
+        return "\(minutes) min"
+    }
 }
 
 struct StopDetailResponse: Codable {

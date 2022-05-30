@@ -22,4 +22,8 @@ struct TrainViewModel: Identifiable {
     var stop: String {
         "\(trip.upcomingStop)"
     }
+    
+    var minutesFromUpcomingStop: String {
+        "\(trip.minutesFromUpcomingStop)"
+    }
 }

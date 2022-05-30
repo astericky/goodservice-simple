@@ -29,11 +29,11 @@ struct StationDetailView: View {
     
     init(station: StationViewModel) {
         self.station = station
-#if DEBUG
-        station.fetchStationFromLocalData()
-#else
+//#if DEBUG
+//        station.fetchStationFromLocalData()
+//#else
         station.fetchStationFromAPI()
-#endif
+//#endif
     }
 }
 
@@ -94,28 +94,28 @@ extension StationDetailView {
                             Spacer()
                             Text("Current Location")
                                 .frame(width: smallColumnWidth, alignment: .leading)
-                            Spacer()
-                            Text("Schedule Adherence")
-                                .frame(width: smallColumnWidth, alignment: .trailing)
+//                            Spacer()
+//                            Text("Schedule Adherence")
+//                                .frame(width: smallColumnWidth, alignment: .trailing)
                         }.font(.caption)
                         
-                            ForEach(trips) { trip in
-                                HStack {
-                                    Text(trip.id)
-                                        .font(.system(size: 14, weight: .regular, design: .default))
-                                        .frame(width: largeColumnWidth, alignment: .leading)
-                                    Spacer()
-                                    Text("\(trip.arrivalTime)")
-                                        .frame(width: smallColumnWidth, alignment: .leading)
-                                    Spacer()
-                                    Text("1 min until \(getStationName(with: trip.stop))")
-                                        .frame(width: smallColumnWidth, alignment: .leading)
-                                    Spacer()
-                                    Text("10 min")
-                                        .frame(width: smallColumnWidth, alignment: .trailing)
-                                }.font(.caption)
+                        ForEach(trips) { trip in
+                            HStack {
+                                Text(trip.id)
+                                    .font(.system(size: 14, weight: .regular, design: .default))
+                                    .frame(width: largeColumnWidth, alignment: .leading)
+                                Spacer()
+                                Text("\(trip.arrivalTime)")
+                                    .frame(width: smallColumnWidth, alignment: .leading)
+                                Spacer()
+                                Text("\(trip.minutesFromUpcomingStop) until \(getStationName(with: trip.stop))")
+                                    .frame(width: smallColumnWidth, alignment: .leading)
+//                                    Spacer()
+//                                    Text("10 min")
+//                                        .frame(width: smallColumnWidth, alignment: .trailing)
+                            }.font(.caption)
 
-                            }
+                        }
 
                         
                     }
@@ -128,7 +128,7 @@ extension StationDetailView {
     func getDestinations(with trips: [TrainViewModel]) -> String {
         let destinationStops = Set<String>(trips.map { $0.stop })
         let destinationNames = destinationStops.map { getStationName(with: $0) }
-        
+        print(destinationStops)
         return destinationNames.joined(separator: ", ")
     }
     
