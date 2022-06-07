@@ -26,14 +26,14 @@ struct ServiceIrregularitySummariesView: View {
             VStack(spacing: 16) {
                 if let northServiceIrregularitySummary = route.routeDetail?.serviceIrregularitySummaries["north"] {
                     HStack {
-                        Text(northServiceIrregularitySummary)
+                        Text(northServiceIrregularitySummary ?? "")
                             .font(.caption)
                     }
                 }
                 
                 if let southServiceIrregularitySummary = route.routeDetail?.serviceIrregularitySummaries["south"] {
                     HStack {
-                        Text(southServiceIrregularitySummary)
+                        Text(southServiceIrregularitySummary ?? "")
                             .font(.caption)
                     }
                 }

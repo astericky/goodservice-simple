@@ -11,11 +11,11 @@ final class RouteDetailViewModel: ObservableObject {
     private var route: RouteDetailResponse
     
     var serviceChangeSummaries: [String: [String]] {
-        route.serviceChangeSummaries
+        route.serviceChangeSummaries ?? [:]
     }
     
-    var serviceIrregularitySummaries: [String: String] {
-        route.serviceIrregularitySummaries
+    var serviceIrregularitySummaries: [String: String?] {
+        route.serviceIrregularitySummaries ?? [:]
     }
     
     init(route: RouteDetailResponse) {

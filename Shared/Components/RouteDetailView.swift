@@ -55,11 +55,11 @@ extension RouteDetailView {
     }
     
     func getRouteDetail() {
-#if DEBUG
-        route.fetchRouteDetailFromLocalData()
-#else
+//#if DEBUG
+//        route.fetchRouteDetailFromLocalData()
+//#else
         route.fetchRouteDetailFromAPI()
-#endif
+//#endif
     }
 }
 
