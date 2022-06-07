@@ -48,14 +48,20 @@ extension RouteStatusView {
 }
 
 struct RouteStatusView_Previews: PreviewProvider {
-    static var routes = [
-        RouteViewModel(route: routeA),
-        RouteViewModel(route: route1),
-        RouteViewModel(route: routeN),
-        RouteViewModel(route: routeS),
-        RouteViewModel(route: routeA),
-        RouteViewModel(route: route1),
-    ]
+//    static var routes = [
+//        RouteViewModel(route: routeA),
+//        RouteViewModel(route: route1),
+//        RouteViewModel(route: routeN),
+//        RouteViewModel(route: routeS),
+//        RouteViewModel(route: routeA),
+//        RouteViewModel(route: route1),
+//        RouteViewModel(route: routeA),
+//        RouteViewModel(route: route1),
+//        RouteViewModel(route: routeN),
+//        RouteViewModel(route: routeS),
+//        RouteViewModel(route: routeA),
+//        RouteViewModel(route: route1),
+//    ]
     static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
         Group {

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import WrappingHStack
 
 class SelectedRouteManager: ObservableObject {
     @Published var selectedRoute: RouteViewModel? = nil
@@ -17,13 +16,25 @@ struct HorizontalRouteListView: View {
     @StateObject private var selectedRouteManager = SelectedRouteManager()
     
     var routes = [RouteViewModel]()
+    var colums = [GridItem(.fixed(25)),
+                  GridItem(.fixed(25)),
+                  GridItem(.fixed(25)),
+                  GridItem(.fixed(25)),
+                  GridItem(.fixed(25)),
+                  GridItem(.fixed(25)),
+                  GridItem(.fixed(25)),
+                  GridItem(.fixed(25)),
+                  GridItem(.fixed(25)),
+                  GridItem(.fixed(25))]
     var body: some View {
-        WrappingHStack(routes, alignment: .leading, spacing: .constant(8)) { route in
-            RouteIconView(route: route)
-                .onTapGesture {
-                    self.selectedRouteManager.selectedRoute = route
-                    self.selectedRouteManager.showRoute.toggle()
-                }
+        LazyVGrid(columns: colums) {
+            ForEach(routes) { route in
+                RouteIconView(route: route)
+                    .onTapGesture {
+                        self.selectedRouteManager.selectedRoute = route
+                        self.selectedRouteManager.showRoute.toggle()
+                    }
+            }
         }
         .frame(maxWidth: 360)
         .sheet(isPresented: $selectedRouteManager.showRoute) {
