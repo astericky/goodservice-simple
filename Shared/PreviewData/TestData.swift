@@ -11,11 +11,11 @@ import Foundation
 let serviceChangeSummaryObject = [
     "both": ["<2> trains are skipping Clark St."],
     "north": ["Wakefield - 241 St-bound trains are skipping Eastern Pkwy - Brooklyn Museum, Grand Army Plaza, and Bergen St."],
-    "south": ["Wakefield - 241 St-bound trains are skipping Eastern Pkwy - Brooklyn Museum, Grand Army Plaza, and Bergen St."],
+    "south": ["Wakefield - 241 St-bound trains are skipping Eastern Pkwy"],
 ]
 let serviceIrregularitySummaries = [
-    "north": "Wakefield - 241 St-bound trains are having longer wait times between Flatbush Av - Brooklyn College and Gun Hill Rd (up to 18 mins, normally every 8 mins).",
-    "south": "Flatbush Av - Brooklyn College-bound trains are having longer wait times between Wakefield - 241 St and Franklin Av - Medgar Evers College (up to 20 mins, normally every 9 mins)."
+    "north": "Wakefield - 241 St-bound trains are having longer wait times between Flatbush Av - Brooklyn College and Gun Hill Rd (up to 18 mins, normally every 8 mins). Sunny did this and now he's doing it again.",
+    "south": "Flatbush Av - Brooklyn College/South Ferry-bound trains are having longer wait times between Chambers St and South Ferry (up to 19 mins, normally every 17 mins)."
 ]
 let route1 = Route(id: "A", name: "A", color: "#0000FF", textColor: "#FFFFFF", alternateName: "Leftert's Blvd", status: "Good Service", visible: true, scheduled: true)
 let routeSIR = Route(id: "SIR", name: "SIR", color: "#0000FF", textColor: "#FFFFFF", alternateName: "Leftert's Blvd", status: "Good Service", visible: true, scheduled: true)

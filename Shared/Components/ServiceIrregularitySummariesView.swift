@@ -28,6 +28,7 @@ struct ServiceIrregularitySummariesView: View {
                     HStack {
                         Text(northServiceIrregularitySummary ?? "")
                             .font(.caption)
+                            .multilineTextAlignment(.center)
                     }
                 }
                 
@@ -35,6 +36,7 @@ struct ServiceIrregularitySummariesView: View {
                     HStack {
                         Text(southServiceIrregularitySummary ?? "")
                             .font(.caption)
+                            .multilineTextAlignment(.center)
                     }
                 }
             }.padding(.horizontal)

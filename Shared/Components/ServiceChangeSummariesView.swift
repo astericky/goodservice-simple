@@ -29,6 +29,7 @@ struct ServiceChangeSummariesView: View {
                         HStack {
                             Text(serviceChangeSummary)
                                 .font(.caption)
+                                .multilineTextAlignment(.center)
                         }.padding(.bottom, 6)
                     }
                 }
@@ -38,6 +39,7 @@ struct ServiceChangeSummariesView: View {
                         HStack {
                             Text(serviceChangeSummary)
                                 .font(.caption)
+                                .multilineTextAlignment(.center)
                         }.padding(.bottom, 6)
                     }
                 }
@@ -47,6 +49,7 @@ struct ServiceChangeSummariesView: View {
                         HStack {
                             Text(serviceChangeSummary)
                                 .font(.caption)
+                                .multilineTextAlignment(.center)
                         }.padding(.bottom, 6)
                     }
                 }
