@@ -25,9 +25,11 @@ struct RouteDetailView: View {
             }
             
             if let serviceIrregularitySummaries = route.routeDetail?.serviceIrregularitySummaries,
-               let _ = serviceIrregularitySummaries["north"],
-               let _ = serviceIrregularitySummaries["south"] {
-                ServiceIrregularitySummariesView(route: route)
+               let northServiceIrregularitySummaries = serviceIrregularitySummaries["north"],
+               let southServiceIrregularitySummaries = serviceIrregularitySummaries["south"] {
+                if (northServiceIrregularitySummaries != nil) || southServiceIrregularitySummaries != nil {
+                    ServiceIrregularitySummariesView(route: route)
+                }
             }
 
             Spacer()
