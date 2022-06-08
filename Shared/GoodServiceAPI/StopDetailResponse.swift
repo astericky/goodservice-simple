@@ -355,7 +355,7 @@ extension Trip {
 struct StopDetailResponse: Codable {
     let id: String
     let name: String
-    let secondaryName: String
+    let secondaryName: String?
     let upcomingTrips: [String: [Trip]]
     let timestamp: Int
     
@@ -365,6 +365,23 @@ struct StopDetailResponse: Codable {
         case secondaryName = "secondary_name"
         case upcomingTrips = "upcoming_trips"
         case timestamp
+    }
+    
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        id = try values.decode(String.self, forKey: .id)
+        name = try values.decode(String.self, forKey: .name)
+        secondaryName = try values.decodeIfPresent(String.self, forKey: .secondaryName)
+        upcomingTrips = try values.decode([String: [Trip]].self, forKey: .upcomingTrips)
+        timestamp = try values.decode(Int.self, forKey: .timestamp)
+    }
+    
+    init(id: String, name: String, secondaryName: String?, upcomingTrips: [String: [Trip]], timestamp: Int) {
+        self.id = id
+        self.name = name
+        self.secondaryName = secondaryName
+        self.upcomingTrips = upcomingTrips
+        self.timestamp = timestamp
     }
 }
 

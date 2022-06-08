@@ -19,7 +19,7 @@ final class StationDetailViewModel: ObservableObject {
     }
     
     var secondaryName: String {
-        station.secondaryName
+        station.secondaryName ?? ""
     }
     
     var upcomingTrips: [String: [TrainViewModel]] {

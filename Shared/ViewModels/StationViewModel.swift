@@ -52,7 +52,7 @@ final class StationViewModel: ObservableObject, Identifiable {
     }
     
     func fetchStationFromAPI() {
-        print(station.id)
+        print("fetchStationFromAPI :: ", station.id)
         goodServiceFetcher
             .getStopFromAPI(using: station.id)
             .receive(on: DispatchQueue.main)

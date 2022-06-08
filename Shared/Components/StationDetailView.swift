@@ -25,15 +25,17 @@ struct StationDetailView: View {
             header
             upcomingTrainTimes
         }.navigationBarHidden(true)
+            .onAppear {
+                //#if DEBUG
+                //        station.fetchStationFromLocalData()
+                //#else
+                        station.fetchStationFromAPI()
+                //#endif
+            }
     }
     
     init(station: StationViewModel) {
         self.station = station
-//#if DEBUG
-//        station.fetchStationFromLocalData()
-//#else
-        station.fetchStationFromAPI()
-//#endif
     }
 }
 
