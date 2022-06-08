@@ -19,6 +19,7 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
     
     @Published var routes = [RouteViewModel]()
     @Published var routesByStatus = [String: [RouteViewModel]]()
+    @Published var routesDictionary = [String: RouteViewModel]()
     
     @Published var stations = [StationViewModel]()
     
@@ -45,6 +46,9 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
                     let newRoutes = data.routes.values.map(RouteViewModel.init)
                     self.routes = newRoutes
                     self.routesByStatus = self.getRoutesByStatus()
+                    self.routes.forEach {
+                        self.routesDictionary[$0.name] = $0
+                    }
                 })
             .store(in: &disposables)
     }

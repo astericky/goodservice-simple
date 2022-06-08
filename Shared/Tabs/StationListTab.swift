@@ -22,12 +22,31 @@ struct StationListTab: View {
                     Text(station.secondaryName)
                         .font(.caption)
                         .foregroundColor(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
+                    Spacer()
+                    stationRoutes(routeNames: station.routes)
                 }
             }
             .listStyle(.inset)
             .navigationTitle("Stations")
         }
     }
+}
+
+extension StationListTab {
+    func stationRoutes(routeNames: [String]) -> some View {
+        let filteredRouteNames = routeNames.map ({ (routeName) -> String in
+            if routeName == "SIR" {
+                return routeName
+            }
+            return "\(routeName.prefix(1))"
+        })
+        let routes = filteredRouteNames.map {
+            vm.routesDictionary[$0]!
+        }
+        print("stationRoutes :: routes :: ", routes)
+        return HorizontalRouteListView(routes: routes, size: "small")
+    }
+    
 }
 
 struct StationListTab_Previews: PreviewProvider {

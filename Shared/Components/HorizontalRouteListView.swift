@@ -14,18 +14,29 @@ class SelectedRouteManager: ObservableObject {
 
 struct HorizontalRouteListView: View {
     @StateObject private var selectedRouteManager = SelectedRouteManager()
+    private var size: String
     
     var routes = [RouteViewModel]()
-    var colums = [GridItem(.fixed(25)),
-                  GridItem(.fixed(25)),
-                  GridItem(.fixed(25)),
-                  GridItem(.fixed(25)),
-                  GridItem(.fixed(25)),
-                  GridItem(.fixed(25)),
-                  GridItem(.fixed(25)),
-                  GridItem(.fixed(25)),
-                  GridItem(.fixed(25)),
-                  GridItem(.fixed(25))]
+    var colums: [GridItem] {
+        return size == "small" ? [
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25))]
+                    : [
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25)),
+                      GridItem(.fixed(25))
+                     ]
+    }
     var body: some View {
         LazyVGrid(columns: colums) {
             ForEach(routes) { route in
@@ -42,6 +53,11 @@ struct HorizontalRouteListView: View {
                 RouteDetailView(route: routeToShow)
             }
         }
+    }
+    
+    init(routes: [RouteViewModel], size: String = "large") {
+        self.routes = routes
+        self.size = size
     }
 }
 
