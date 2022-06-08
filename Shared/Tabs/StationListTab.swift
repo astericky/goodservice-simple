@@ -19,6 +19,9 @@ struct StationListTab: View {
             List(stations) { station in
                 NavigationLink(destination: StationDetailView(station: station)) {
                     Text(station.name)
+                    Text(station.secondaryName)
+                        .font(.caption)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
                 }
             }
             .listStyle(.inset)

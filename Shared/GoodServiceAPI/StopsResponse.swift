@@ -10,7 +10,15 @@ import Foundation
 struct Stop: Codable {
     let id: String
     let name: String
+    let secondaryName: String?
     let routes: [String: [String]]
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case name
+        case secondaryName = "secondary_name"
+        case routes
+    }
 }
 
 struct StopsResponse: Codable {

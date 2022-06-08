@@ -139,7 +139,7 @@ extension StationDetailView {
 
 
 struct StationDetailView_Previews: PreviewProvider {
-    static var stop = Stop(id: "E01", name: "World Trade Center", routes: [
+    static var stop = Stop(id: "E01", name: "World Trade Center", secondaryName: "9th Street World View", routes: [
         "E": ["north", "south"],
         "F": ["north", "south"]
     ])

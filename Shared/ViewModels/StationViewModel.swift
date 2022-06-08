@@ -23,6 +23,10 @@ final class StationViewModel: ObservableObject, Identifiable {
         station.name
     }
     
+    var secondaryName: String {
+        station.secondaryName ?? ""
+    }
+    
     var routes: [String] {
         Array<String>(station.routes.keys)
     }
