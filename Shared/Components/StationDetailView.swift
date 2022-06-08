@@ -130,7 +130,6 @@ extension StationDetailView {
     func getDestinations(with trips: [TrainViewModel]) -> String {
         let destinationStops = Set<String>(trips.map { $0.stop })
         let destinationNames = destinationStops.map { getStationName(with: $0) }
-        print(destinationStops)
         return destinationNames.joined(separator: ", ")
     }
     
