@@ -15,9 +15,13 @@ struct StationDetailView: View {
     @ObservedObject var station: StationViewModel
     
     var connectingRoutes: [RouteViewModel] {
-        return station.routes.map { name in
-            vm.getRoute(by: name)!
+        var routeViewModelArray = [RouteViewModel]()
+        for name in station.routes {
+            if let routeVM = vm.getRoute(by: name) {
+                routeViewModelArray.append(routeVM)
+            }
         }
+        return routeViewModelArray
     }
     
     var body: some View {
@@ -53,23 +57,21 @@ extension StationDetailView {
                 }
                 Spacer()
             }
-            HStack {
-                Text(station.name)
-                    .font(.headline)
-//                ForEach(connectingRoutes) { route in
-//                    RouteIconView(route: route)
-//                }
-                Spacer()
-                
+            HStack(alignment: .center) {
+                VStack(alignment: .leading) {
+                    Text(station.name)
+                        .font(.headline)
+                    if let secondaryName = station.stationDetail?.secondaryName {
+                        Text(secondaryName)
+                            .font(.caption)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
+                    }
+                }
+                HorizontalRouteListView(routes: connectingRoutes, size: "small")
             }
-            HStack {
-                Text(station.stationDetail?.secondaryName ?? "")
-                    .font(.caption)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
-                Spacer()
-            }
-        }.padding()
-            .padding(.top, 0)
+        }
+        .padding()
+        .padding(.top, 0)
     }
     
     private var upcomingTrainTimes: some View {
@@ -78,104 +80,108 @@ extension StationDetailView {
             let width = proxy.size.width
             let largeColumnWidth = (proxy.size.width - 32) * 0.3
             let smallColumnWidth = (proxy.size.width - 32) * 0.2
-//            ScrollView {
-                VStack {
-                    Text("Upcoming Train Times")
-                        .bold()
-                        .padding(.bottom, 8)
-                    if let trips = station.stationDetail?.upcomingTrips["north"] {
-                        Text(getDestinations(with: trips))
-                            .font(.system(size: 16))
-                            .padding(.leading, 16)
-                            .frame(width: width, alignment: .leading)
-                        List {
+
+            VStack {
+                Text("Upcoming Train Times")
+                    .bold()
+                    .padding(.bottom, 8)
+                if let trips = station.stationDetail?.upcomingTrips["north"] {
+                    Text(getDestinations(with: trips))
+                        .font(.system(size: 16))
+                        .padding(.leading, 16)
+                        .frame(width: width, alignment: .leading)
+                    List {
+                        HStack {
+                            Text("Train ID / Destination")
+                                .frame(width: largeColumnWidth, alignment: .leading)
+                            Spacer()
+                            Text("Projected Time")
+                                .frame(width: smallColumnWidth, alignment: .leading)
+                            Spacer()
+                            Text("Current Location")
+                                .frame(width: smallColumnWidth, alignment: .leading)
+//                            Spacer()
+//                            Text("Schedule Adherence")
+//                                .frame(width: smallColumnWidth, alignment: .trailing)
+                        }.font(.caption)
+                        
+                        ForEach(trips) { trip in
                             HStack {
-                                Text("Train ID / Destination")
+                                HStack {
+                                    if let route = vm.routesDictionary[trip.routeId] {
+                                        RouteIconView(route: route)
+                                    }
+                                    
+                                    Text(trip.id)
+                                        .font(.system(size: 14, weight: .regular, design: .default))
+                                }
                                     .frame(width: largeColumnWidth, alignment: .leading)
                                 Spacer()
-                                Text("Projected Time")
+                                Text("\(trip.arrivalTime)")
                                     .frame(width: smallColumnWidth, alignment: .leading)
                                 Spacer()
-                                Text("Current Location")
+                                Text("\(trip.minutesFromUpcomingStop) until \(getStationName(with: trip.stop))")
                                     .frame(width: smallColumnWidth, alignment: .leading)
-    //                            Spacer()
-    //                            Text("Schedule Adherence")
-    //                                .frame(width: smallColumnWidth, alignment: .trailing)
+//                                    Spacer()
+//                                    Text("10 min")
+//                                        .frame(width: smallColumnWidth, alignment: .trailing)
                             }.font(.caption)
-                            
-                            ForEach(trips) { trip in
-                                HStack {
-                                    HStack {
-                                        RouteIconView(route: vm.routesDictionary[trip.routeId]!)
-                                        Text(trip.id)
-                                            .font(.system(size: 14, weight: .regular, design: .default))
-                                    }
-                                        .frame(width: largeColumnWidth, alignment: .leading)
-                                    Spacer()
-                                    Text("\(trip.arrivalTime)")
-                                        .frame(width: smallColumnWidth, alignment: .leading)
-                                    Spacer()
-                                    Text("\(trip.minutesFromUpcomingStop) until \(getStationName(with: trip.stop))")
-                                        .frame(width: smallColumnWidth, alignment: .leading)
-    //                                    Spacer()
-    //                                    Text("10 min")
-    //                                        .frame(width: smallColumnWidth, alignment: .trailing)
-                                }.font(.caption)
 
-                            }
-
-                            
                         }
-                        .listStyle(PlainListStyle())
-                    }
-                    
-                    if let trips = station.stationDetail?.upcomingTrips["south"] {
-                        Text(getDestinations(with: trips))
-                            .font(.system(size: 16))
-                            .padding(.leading, 16)
-                            .frame(width: width, alignment: .leading)
-                        List {
-                            HStack {
-                                Text("Train ID / Destination")
-                                    .frame(width: largeColumnWidth, alignment: .leading)
-                                Spacer()
-                                Text("Projected Time")
-                                    .frame(width: smallColumnWidth, alignment: .leading)
-                                Spacer()
-                                Text("Current Location")
-                                    .frame(width: smallColumnWidth, alignment: .leading)
-    //                            Spacer()
-    //                            Text("Schedule Adherence")
-    //                                .frame(width: smallColumnWidth, alignment: .trailing)
-                            }.font(.caption)
-                            
-                            ForEach(trips) { trip in
-                                HStack {
-                                    HStack {
-                                        RouteIconView(route: vm.routesDictionary[trip.routeId]!)
-                                        Text(trip.id)
-                                            .font(.system(size: 14, weight: .regular, design: .default))
-                                    }
-                                        .frame(width: largeColumnWidth, alignment: .leading)
-                                    Spacer()
-                                    Text("\(trip.arrivalTime)")
-                                        .frame(width: smallColumnWidth, alignment: .leading)
-                                    Spacer()
-                                    Text("\(trip.minutesFromUpcomingStop) until \(getStationName(with: trip.stop))")
-                                        .frame(width: smallColumnWidth, alignment: .leading)
-    //                                    Spacer()
-    //                                    Text("10 min")
-    //                                        .frame(width: smallColumnWidth, alignment: .trailing)
-                                }.font(.caption)
 
-                            }
-
-                            
-                        }
-                        .listStyle(PlainListStyle())
+                        
                     }
+                    .listStyle(PlainListStyle())
                 }
-//            }
+                
+                if let trips = station.stationDetail?.upcomingTrips["south"] {
+                    Text(getDestinations(with: trips))
+                        .font(.system(size: 16))
+                        .padding(.leading, 16)
+                        .frame(width: width, alignment: .leading)
+                    List {
+                        HStack {
+                            Text("Train ID / Destination")
+                                .frame(width: largeColumnWidth, alignment: .leading)
+                            Spacer()
+                            Text("Projected Time")
+                                .frame(width: smallColumnWidth, alignment: .leading)
+                            Spacer()
+                            Text("Current Location")
+                                .frame(width: smallColumnWidth, alignment: .leading)
+//                            Spacer()
+//                            Text("Schedule Adherence")
+//                                .frame(width: smallColumnWidth, alignment: .trailing)
+                        }.font(.caption)
+                        
+                        ForEach(trips) { trip in
+                            HStack {
+                                HStack {
+                                    if let route = vm.routesDictionary[trip.routeId] {
+                                        RouteIconView(route: route)
+                                    }
+                                    Text(trip.id)
+                                        .font(.system(size: 14, weight: .regular, design: .default))
+                                }
+                                    .frame(width: largeColumnWidth, alignment: .leading)
+                                Spacer()
+                                Text("\(trip.arrivalTime)")
+                                    .frame(width: smallColumnWidth, alignment: .leading)
+                                Spacer()
+                                Text("\(trip.minutesFromUpcomingStop) until \(getStationName(with: trip.stop))")
+                                    .frame(width: smallColumnWidth, alignment: .leading)
+//                                    Spacer()
+//                                    Text("10 min")
+//                                        .frame(width: smallColumnWidth, alignment: .trailing)
+                            }.font(.caption)
+
+                        }
+
+                        
+                    }
+                    .listStyle(PlainListStyle())
+                }
+            }
         }
     }
     

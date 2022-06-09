@@ -22,7 +22,6 @@ struct HorizontalRouteListView: View {
                       GridItem(.fixed(25)),
                       GridItem(.fixed(25)),
                       GridItem(.fixed(25)),
-                      GridItem(.fixed(25)),
                       GridItem(.fixed(25))]
                     : [
                       GridItem(.fixed(25)),
@@ -38,7 +37,7 @@ struct HorizontalRouteListView: View {
                      ]
     }
     var body: some View {
-        LazyVGrid(columns: colums) {
+        LazyVGrid(columns: colums, alignment: .leading) {
             ForEach(routes) { route in
                 RouteIconView(route: route)
                     .onTapGesture {
@@ -47,7 +46,7 @@ struct HorizontalRouteListView: View {
                     }
             }
         }
-        .frame(maxWidth: 360)
+        .frame(maxWidth: .infinity)
         .sheet(isPresented: $selectedRouteManager.showRoute) {
             if let routeToShow = selectedRouteManager.selectedRoute {
                 RouteDetailView(route: routeToShow)
@@ -67,21 +66,21 @@ struct HorizontalRouteListView_Previews: PreviewProvider {
         RouteViewModel(route: route1),
         RouteViewModel(route: routeN),
         RouteViewModel(route: routeS),
-        RouteViewModel(route: routeA),
+        RouteViewModel(route: routeF),
         RouteViewModel(route: route1),
-        RouteViewModel(route: routeN),
-        RouteViewModel(route: routeS),
-        RouteViewModel(route: routeA),
-        RouteViewModel(route: route1),
-        RouteViewModel(route: routeN),
-        RouteViewModel(route: routeS),
-        RouteViewModel(route: routeA),
-        RouteViewModel(route: route1),
-        RouteViewModel(route: routeN),
-        RouteViewModel(route: routeS),
+//        RouteViewModel(route: routeN),
+//        RouteViewModel(route: routeS),
+//        RouteViewModel(route: routeA),
+//        RouteViewModel(route: route1),
+//        RouteViewModel(route: routeN),
+//        RouteViewModel(route: routeS),
+//        RouteViewModel(route: routeA),
+//        RouteViewModel(route: route1),
+//        RouteViewModel(route: routeN),
+//        RouteViewModel(route: routeS),
     ]
     static var previews: some View {
         HorizontalRouteListView(routes: routes)
-            .previewLayout(.sizeThatFits)
+//            .previewLayout(.sizeThatFits)
     }
 }

@@ -106,6 +106,6 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
     }
     
     func getRoute(by name: String) -> RouteViewModel? {
-        routes.first(where: { $0.name == name})
+        routesDictionary[name]
     }
 }
