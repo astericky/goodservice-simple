@@ -43,7 +43,6 @@ extension StationListTab {
         let routes = filteredRouteNames.map {
             vm.routesDictionary[$0]!
         }
-        print("stationRoutes :: routes :: ", routes)
         return HorizontalRouteListView(routes: routes, size: "small")
     }
     

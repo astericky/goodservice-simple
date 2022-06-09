@@ -103,8 +103,11 @@ extension StationDetailView {
                         
                         ForEach(trips) { trip in
                             HStack {
-                                Text(trip.id)
-                                    .font(.system(size: 14, weight: .regular, design: .default))
+                                HStack {
+                                    RouteIconView(route: vm.routesDictionary[trip.routeId]!)
+                                    Text(trip.id)
+                                        .font(.system(size: 14, weight: .regular, design: .default))
+                                }
                                     .frame(width: largeColumnWidth, alignment: .leading)
                                 Spacer()
                                 Text("\(trip.arrivalTime)")
@@ -128,7 +131,7 @@ extension StationDetailView {
     }
     
     func getDestinations(with trips: [TrainViewModel]) -> String {
-        let destinationStops = Set<String>(trips.map { $0.stop })
+        let destinationStops = Set<String>(trips.map { $0.destinationStop })
         let destinationNames = destinationStops.map { getStationName(with: $0) }
         return destinationNames.joined(separator: ", ")
     }

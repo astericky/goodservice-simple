@@ -15,12 +15,20 @@ struct TrainViewModel: Identifiable {
         trip.id
     }
     
+    var routeId: String {
+        trip.routeId
+    }
+    
     var arrivalTime: String {
         "\(trip.arrivalTime)"
     }
     
     var stop: String {
         "\(trip.upcomingStop)"
+    }
+    
+    var destinationStop: String {
+        trip.destinationStop
     }
     
     var minutesFromUpcomingStop: String {
