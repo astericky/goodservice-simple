@@ -58,7 +58,7 @@ extension StationDetailView {
                 Spacer()
             }
             HStack(alignment: .center) {
-                VStack(alignment: .leading) {
+                VStack(alignment: station.stationDetail?.secondaryName != nil ? .leading : .center) {
                     Text(station.name)
                         .font(.headline)
                     if let secondaryName = station.stationDetail?.secondaryName {

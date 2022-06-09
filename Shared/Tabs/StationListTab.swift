@@ -17,13 +17,24 @@ struct StationListTab: View {
     var body: some View {
         NavigationView {
             List(stations) { station in
-                NavigationLink(destination: StationDetailView(station: station)) {
-                    Text(station.name)
-                    Text(station.secondaryName)
-                        .font(.caption)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
-                    Spacer()
-                    stationRoutes(routeNames: station.routes)
+                ZStack {
+                    NavigationLink(destination: StationDetailView(station: station)) {
+                    }
+                    HStack {
+                        VStack(alignment: .leading) {
+                            Text(station.name)
+                            if !station.secondaryName.isEmpty {
+                                Text(station.secondaryName)
+                                    .font(.caption)
+                                    .foregroundColor(Color.gray)
+                            }
+                        }
+                        .fixedSize()
+
+                        Spacer()
+                        stationRoutes(routeNames: station.routes)
+                    }
+                    .background(Color.white)
                 }
             }
             .listStyle(.inset)
@@ -34,15 +45,19 @@ struct StationListTab: View {
 
 extension StationListTab {
     func stationRoutes(routeNames: [String]) -> some View {
+        var routes = [RouteViewModel]()
         let filteredRouteNames = routeNames.map ({ (routeName) -> String in
             if routeName == "SIR" {
                 return routeName
             }
             return "\(routeName.prefix(1))"
         })
-        let routes = filteredRouteNames.map {
-            vm.routesDictionary[$0]!
+        for route in filteredRouteNames {
+            if let routeVM = vm.routesDictionary[route] {
+                routes.append(routeVM)
+            }
         }
+
         return HorizontalRouteListView(routes: routes, size: "small")
     }
     
