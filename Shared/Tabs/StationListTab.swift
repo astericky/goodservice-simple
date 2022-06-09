@@ -57,7 +57,6 @@ extension StationListTab {
                 routes.append(routeVM)
             }
         }
-
         return HorizontalRouteListView(routes: routes, size: "small")
     }
     
