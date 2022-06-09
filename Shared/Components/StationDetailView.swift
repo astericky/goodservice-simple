@@ -73,60 +73,109 @@ extension StationDetailView {
     }
     
     private var upcomingTrainTimes: some View {
+        
         GeometryReader { proxy in
             let width = proxy.size.width
             let largeColumnWidth = (proxy.size.width - 32) * 0.3
             let smallColumnWidth = (proxy.size.width - 32) * 0.2
-            VStack {
-                Text("Upcoming Train Times")
-                    .bold()
-                    .padding(.bottom, 8)
-                if let trips = station.stationDetail?.upcomingTrips["north"] {
-                    Text(getDestinations(with: trips))
-                        .font(.system(size: 16))
-                        .padding(.leading, 16)
-                        .frame(width: width, alignment: .leading)
-                    List {
-                        HStack {
-                            Text("Train ID / Destination")
-                                .frame(width: largeColumnWidth, alignment: .leading)
-                            Spacer()
-                            Text("Projected Time")
-                                .frame(width: smallColumnWidth, alignment: .leading)
-                            Spacer()
-                            Text("Current Location")
-                                .frame(width: smallColumnWidth, alignment: .leading)
-//                            Spacer()
-//                            Text("Schedule Adherence")
-//                                .frame(width: smallColumnWidth, alignment: .trailing)
-                        }.font(.caption)
-                        
-                        ForEach(trips) { trip in
+//            ScrollView {
+                VStack {
+                    Text("Upcoming Train Times")
+                        .bold()
+                        .padding(.bottom, 8)
+                    if let trips = station.stationDetail?.upcomingTrips["north"] {
+                        Text(getDestinations(with: trips))
+                            .font(.system(size: 16))
+                            .padding(.leading, 16)
+                            .frame(width: width, alignment: .leading)
+                        List {
                             HStack {
-                                HStack {
-                                    RouteIconView(route: vm.routesDictionary[trip.routeId]!)
-                                    Text(trip.id)
-                                        .font(.system(size: 14, weight: .regular, design: .default))
-                                }
+                                Text("Train ID / Destination")
                                     .frame(width: largeColumnWidth, alignment: .leading)
                                 Spacer()
-                                Text("\(trip.arrivalTime)")
+                                Text("Projected Time")
                                     .frame(width: smallColumnWidth, alignment: .leading)
                                 Spacer()
-                                Text("\(trip.minutesFromUpcomingStop) until \(getStationName(with: trip.stop))")
+                                Text("Current Location")
                                     .frame(width: smallColumnWidth, alignment: .leading)
-//                                    Spacer()
-//                                    Text("10 min")
-//                                        .frame(width: smallColumnWidth, alignment: .trailing)
+    //                            Spacer()
+    //                            Text("Schedule Adherence")
+    //                                .frame(width: smallColumnWidth, alignment: .trailing)
                             }.font(.caption)
+                            
+                            ForEach(trips) { trip in
+                                HStack {
+                                    HStack {
+                                        RouteIconView(route: vm.routesDictionary[trip.routeId]!)
+                                        Text(trip.id)
+                                            .font(.system(size: 14, weight: .regular, design: .default))
+                                    }
+                                        .frame(width: largeColumnWidth, alignment: .leading)
+                                    Spacer()
+                                    Text("\(trip.arrivalTime)")
+                                        .frame(width: smallColumnWidth, alignment: .leading)
+                                    Spacer()
+                                    Text("\(trip.minutesFromUpcomingStop) until \(getStationName(with: trip.stop))")
+                                        .frame(width: smallColumnWidth, alignment: .leading)
+    //                                    Spacer()
+    //                                    Text("10 min")
+    //                                        .frame(width: smallColumnWidth, alignment: .trailing)
+                                }.font(.caption)
 
+                            }
+
+                            
                         }
-
-                        
+                        .listStyle(PlainListStyle())
                     }
-                    .listStyle(PlainListStyle())
+                    
+                    if let trips = station.stationDetail?.upcomingTrips["south"] {
+                        Text(getDestinations(with: trips))
+                            .font(.system(size: 16))
+                            .padding(.leading, 16)
+                            .frame(width: width, alignment: .leading)
+                        List {
+                            HStack {
+                                Text("Train ID / Destination")
+                                    .frame(width: largeColumnWidth, alignment: .leading)
+                                Spacer()
+                                Text("Projected Time")
+                                    .frame(width: smallColumnWidth, alignment: .leading)
+                                Spacer()
+                                Text("Current Location")
+                                    .frame(width: smallColumnWidth, alignment: .leading)
+    //                            Spacer()
+    //                            Text("Schedule Adherence")
+    //                                .frame(width: smallColumnWidth, alignment: .trailing)
+                            }.font(.caption)
+                            
+                            ForEach(trips) { trip in
+                                HStack {
+                                    HStack {
+                                        RouteIconView(route: vm.routesDictionary[trip.routeId]!)
+                                        Text(trip.id)
+                                            .font(.system(size: 14, weight: .regular, design: .default))
+                                    }
+                                        .frame(width: largeColumnWidth, alignment: .leading)
+                                    Spacer()
+                                    Text("\(trip.arrivalTime)")
+                                        .frame(width: smallColumnWidth, alignment: .leading)
+                                    Spacer()
+                                    Text("\(trip.minutesFromUpcomingStop) until \(getStationName(with: trip.stop))")
+                                        .frame(width: smallColumnWidth, alignment: .leading)
+    //                                    Spacer()
+    //                                    Text("10 min")
+    //                                        .frame(width: smallColumnWidth, alignment: .trailing)
+                                }.font(.caption)
+
+                            }
+
+                            
+                        }
+                        .listStyle(PlainListStyle())
+                    }
                 }
-            }
+//            }
         }
     }
     
