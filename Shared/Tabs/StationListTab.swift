@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StationListTab: View {
     @EnvironmentObject var vm: GoodServiceViewModel
+    @Environment(\.colorScheme) var colorScheme
     
     var stations: [StationViewModel] {
         vm.stations
@@ -23,6 +24,7 @@ struct StationListTab: View {
                     HStack {
                         VStack(alignment: .leading) {
                             Text(station.name)
+                                .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                             if !station.secondaryName.isEmpty {
                                 Text(station.secondaryName)
                                     .font(.caption)
@@ -34,7 +36,7 @@ struct StationListTab: View {
                         Spacer()
                         stationRoutes(routeNames: station.routes)
                     }
-                    .background(Color.white)
+                    .background(Color(UIColor.systemBackground))
                 }
             }
             .listStyle(.inset)

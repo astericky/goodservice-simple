@@ -14,7 +14,10 @@ struct RouteStatusView: View {
         Color("color-" + status.lowercased().replacingOccurrences(of: " ", with: "-"))
     }
     var statusForegroundColor: Color {
-        status != "Not Scheduled" ? statusColor : Color.black
+        if status == "Not Scheduled" || status == "No Service" {
+            return Color.defaultGray
+        }
+        return statusColor
     }
 
     var body: some View {
