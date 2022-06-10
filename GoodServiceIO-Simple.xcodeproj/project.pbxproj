@@ -33,7 +33,6 @@
 		3D56A102276FBB4600E65748 /* RouteDetailResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */; };
 		3D56A104276FBB9F00E65748 /* RouteDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */; };
 		3D56A106276FBEAA00E65748 /* route.json in Resources */ = {isa = PBXBuildFile; fileRef = 3D56A105276FBEAA00E65748 /* route.json */; };
-		3D6CF510285120D8006A34CD /* StationDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6CF50F285120D8006A34CD /* StationDetailHeaderView.swift */; };
 		3D8AE493277C1F7400079C6B /* StationListTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE492277C1F7400079C6B /* StationListTab.swift */; };
 		3D8AE495277C22FD00079C6B /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE494277C22FD00079C6B /* StationViewModel.swift */; };
 		3D8AE497277C2CA300079C6B /* StationDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8AE496277C2CA300079C6B /* StationDetailViewModel.swift */; };
@@ -97,7 +96,6 @@
 		3D56A101276FBB4600E65748 /* RouteDetailResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailResponse.swift; sourceTree = "<group>"; };
 		3D56A103276FBB9F00E65748 /* RouteDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetailViewModel.swift; sourceTree = "<group>"; };
 		3D56A105276FBEAA00E65748 /* route.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = route.json; sourceTree = "<group>"; };
-		3D6CF50F285120D8006A34CD /* StationDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailHeaderView.swift; sourceTree = "<group>"; };
 		3D8AE492277C1F7400079C6B /* StationListTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListTab.swift; sourceTree = "<group>"; };
 		3D8AE494277C22FD00079C6B /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
 		3D8AE496277C2CA300079C6B /* StationDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationDetailViewModel.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 				3D56A0FA276EA0CA00E65748 /* RouteDetailView.swift */,
 				3D56A0FD276F8FA600E65748 /* RouteIconView.swift */,
 				3D8AE49C277C479800079C6B /* StationDetailView.swift */,
-				3D6CF50F285120D8006A34CD /* StationDetailHeaderView.swift */,
 				3D05CCCF277E1C5C007442F8 /* ServiceChangeSummariesView.swift */,
 				3D05CCD1277E2235007442F8 /* ServiceIrregularitySummariesView.swift */,
 			);
@@ -484,7 +481,6 @@
 				3DF62F7F27337F670053D299 /* StopsResponse.swift in Sources */,
 				3D56A102276FBB4600E65748 /* RouteDetailResponse.swift in Sources */,
 				3D0362302765139B0026ED8B /* RouteStatusView.swift in Sources */,
-				3D6CF510285120D8006A34CD /* StationDetailHeaderView.swift in Sources */,
 				3D2D1A25272DC04A008BF58D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
