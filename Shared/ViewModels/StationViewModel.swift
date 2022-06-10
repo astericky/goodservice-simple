@@ -12,6 +12,7 @@ final class StationViewModel: ObservableObject, Identifiable {
     @Published public var station: Stop
     @Published public var stationDetail: StationDetailViewModel?
     
+    private var timer: Timer?
     private var goodServiceFetcher = GoodServiceFetcher()
     private var disposables = Set<AnyCancellable>()
     
@@ -38,6 +39,16 @@ final class StationViewModel: ObservableObject, Identifiable {
     init(station: Stop, stationDetail: StationDetailViewModel) {
         self.station = station
         self.stationDetail = stationDetail
+    }
+    
+    func refreshStationData() {
+        timer = Timer.scheduledTimer(withTimeInterval: 15, repeats: true, block: { _ in
+            //#if DEBUG
+            //        station.fetchStationFromLocalData()
+            //#else
+                    self.fetchStationFromAPI()
+            //#endif
+        })
     }
     
     func fetchStationFromLocalData() {

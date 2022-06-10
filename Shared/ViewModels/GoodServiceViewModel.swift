@@ -12,7 +12,7 @@ import SwiftUI
 final class GoodServiceViewModel: ObservableObject, Identifiable {
     private var timestamp = ""
     
-    //    private var timer: Timer?
+    private var timer: Timer?
     
     private var goodServiceFetcher: GoodServiceFetcher
     private var disposables = Set<AnyCancellable>()
@@ -26,13 +26,21 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
     init(goodServiceFetcher: GoodServiceFetcher,
          scheduler: DispatchQueue = DispatchQueue(label: "GoodServiceViewModel")) {
         self.goodServiceFetcher = goodServiceFetcher
-//#if DEBUG
-//        fetchRoutesFromLocalData()
-//        fetchStationsFromLocalData()
-//#else
-        fetchRoutesFromAPI()
-        fetchStationsFromAPI()
-//#endif
+        self.refreshData()
+        timer = Timer.scheduledTimer(withTimeInterval: 15, repeats: true, block: { _ in
+            self.refreshData()
+        })
+
+    }
+    
+    func refreshData() {
+        //#if DEBUG
+        //        fetchRoutesFromLocalData()
+        //        fetchStationsFromLocalData()
+        //#else
+        self.fetchRoutesFromAPI()
+        self.fetchStationsFromAPI()
+        //#endif
     }
     
     func fetchRoutesFromAPI() {

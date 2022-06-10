@@ -34,6 +34,7 @@ struct StationDetailView: View {
                 //        station.fetchStationFromLocalData()
                 //#else
                         station.fetchStationFromAPI()
+                        station.refreshStationData()
                 //#endif
             }
     }

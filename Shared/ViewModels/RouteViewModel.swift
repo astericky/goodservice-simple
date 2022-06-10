@@ -12,6 +12,7 @@ final class RouteViewModel: ObservableObject, Identifiable {
     @Published public var route: Route
     @Published public var routeDetail: RouteDetailViewModel?
     
+    private var timer: Timer?
     private var goodServiceFetcher = GoodServiceFetcher()
     private var disposables = Set<AnyCancellable>()
     
@@ -51,6 +52,16 @@ final class RouteViewModel: ObservableObject, Identifiable {
     init(route: Route, routeDetail: RouteDetailViewModel) {
         self.route = route
         self.routeDetail = routeDetail
+    }
+    
+    func refreshRouteData() {
+        timer = Timer.scheduledTimer(withTimeInterval: 15, repeats: true, block: { _ in
+            //#if DEBUG
+            //        self.fetchRouteDetailFromAPI()
+            //#else
+                    self.fetchRouteDetailFromAPI()
+            //#endif
+        })
     }
     
     func fetchRouteDetailFromLocalData() {

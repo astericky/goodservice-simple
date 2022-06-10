@@ -61,6 +61,7 @@ extension RouteDetailView {
 //        route.fetchRouteDetailFromLocalData()
 //#else
         route.fetchRouteDetailFromAPI()
+        route.refreshRouteData()
 //#endif
     }
 }
