@@ -42,7 +42,7 @@ extension RouteStatusView {
     var horizontalList: some View {
         VStack {
             if let routes = viewModel.routesByStatus[status] {
-                HorizontalRouteListView(routes: routes)
+                HorizontalRouteListView(viewModel: viewModel, routes: routes)
             } else {
                 EmptyView()
             }

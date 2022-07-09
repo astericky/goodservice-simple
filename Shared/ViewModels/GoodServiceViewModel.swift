@@ -22,6 +22,7 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
     @Published var routesDictionary = [String: RouteViewModel]()
     
     @Published var stations = [StationViewModel]()
+    @Published var stationsDictionary = [String: StationViewModel]()
     
     init(goodServiceFetcher: GoodServiceFetcher,
          scheduler: DispatchQueue = DispatchQueue(label: "GoodServiceViewModel")) {
@@ -72,6 +73,9 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
                     let newRoutes = data.routes.values.map(RouteViewModel.init)
                     self.routes = newRoutes
                     self.routesByStatus = self.getRoutesByStatus()
+                    self.routes.forEach {
+                        self.routesDictionary[$0.name] = $0
+                    }
                 })
             .store(in: &disposables)
     }
@@ -97,6 +101,9 @@ final class GoodServiceViewModel: ObservableObject, Identifiable {
                 guard let self = self else { return }
                 let newStations = data.stops.map(StationViewModel.init)
                 self.stations = newStations
+                self.stations.forEach {
+                    self.stationsDictionary[$0.name] = $0
+                }
             })
             .store(in: &disposables)
     }

@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Routing: Codable {
+    
+}
+
 struct RouteDetailResponse: Codable {
 
     var id: String
@@ -19,6 +23,7 @@ struct RouteDetailResponse: Codable {
     var scheduled: Bool
     var serviceChangeSummaries: [String: [String]]?
     var serviceIrregularitySummaries: [String: String?]?
+    var actualRoutings: [String: [[String]]]?
     
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -32,9 +37,10 @@ struct RouteDetailResponse: Codable {
         scheduled = try values.decode(Bool.self, forKey: .scheduled)
         serviceChangeSummaries = try values.decodeIfPresent([String: [String]].self, forKey: .serviceChangeSummaries) ?? nil
         serviceIrregularitySummaries = try values.decodeIfPresent([String: String?].self, forKey: .serviceIrregularitySummaries) ?? nil
+        actualRoutings = try values.decodeIfPresent([String: [[String]]].self, forKey: .actualRoutings) ?? nil
     }
     
-    init(id: String, name: String, color: String, textColor: String?, alternateName: String?, status: String, visible: Bool, scheduled: Bool, serviceChangeSummaries: [String: [String]]?, serviceIrregularitySummaries: [String: String?]?) {
+    init(id: String, name: String, color: String, textColor: String?, alternateName: String?, status: String, visible: Bool, scheduled: Bool, serviceChangeSummaries: [String: [String]]?, serviceIrregularitySummaries: [String: String?]?, actualRoutings: [String: [[String]]]?) {
         self.id = id
         self.name = name
         self.color = color
@@ -45,6 +51,7 @@ struct RouteDetailResponse: Codable {
         self.scheduled = scheduled
         self.serviceChangeSummaries = serviceChangeSummaries
         self.serviceIrregularitySummaries = serviceIrregularitySummaries
+        self.actualRoutings = actualRoutings
     }
     
     enum CodingKeys: String, CodingKey {
@@ -58,6 +65,7 @@ struct RouteDetailResponse: Codable {
         case scheduled
         case serviceChangeSummaries = "service_change_summaries"
         case serviceIrregularitySummaries = "service_irregularity_summaries"
+        case actualRoutings = "actual_routings"
     }
     
     enum Status : String, Decodable { case success, error }

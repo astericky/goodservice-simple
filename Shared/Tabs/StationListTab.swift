@@ -59,7 +59,7 @@ extension StationListTab {
                 routes.append(routeVM)
             }
         }
-        return HorizontalRouteListView(routes: routes, size: "small")
+        return HorizontalRouteListView(viewModel: vm, routes: routes, size: "small")
     }
     
 }

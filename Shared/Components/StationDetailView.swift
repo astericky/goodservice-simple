@@ -68,7 +68,7 @@ extension StationDetailView {
                             .foregroundColor(/*@START_MENU_TOKEN@*/Color.gray/*@END_MENU_TOKEN@*/)
                     }
                 }
-                HorizontalRouteListView(routes: connectingRoutes, size: "small")
+                HorizontalRouteListView(viewModel: vm, routes: connectingRoutes, size: "small")
             }
         }
         .padding()

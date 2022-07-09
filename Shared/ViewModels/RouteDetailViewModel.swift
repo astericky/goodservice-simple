@@ -18,6 +18,18 @@ final class RouteDetailViewModel: ObservableObject {
         route.serviceIrregularitySummaries ?? [:]
     }
     
+    var blendedRoute: [String] {
+        route.actualRoutings?["north"]?[0] ?? []
+    }
+    
+    var northRoute: [String] {
+        route.actualRoutings?["north"]?[0] ?? []
+    }
+    
+    var southroute: [String] {
+        route.actualRoutings?["south"]?[0] ?? []
+    }
+    
     init(route: RouteDetailResponse) {
         self.route = route
     }

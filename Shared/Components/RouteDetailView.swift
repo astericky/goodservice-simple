@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RouteDetailView: View {
+    @ObservedObject var viewModel: GoodServiceViewModel
     @ObservedObject var route: RouteViewModel
     
     var body: some View {
@@ -67,8 +68,9 @@ extension RouteDetailView {
 }
 
 struct RouteDetailView_Previews: PreviewProvider {
+    static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var routeViewModel = RouteViewModel(route: route1)
     static var previews: some View {
-        RouteDetailView(route: routeViewModel)
+        RouteDetailView(viewModel: viewModel, route: routeViewModel)
     }
 }

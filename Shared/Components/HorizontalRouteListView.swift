@@ -13,6 +13,7 @@ class SelectedRouteManager: ObservableObject {
 }
 
 struct HorizontalRouteListView: View {
+    @ObservedObject var viewModel: GoodServiceViewModel
     @StateObject private var selectedRouteManager = SelectedRouteManager()
     private var size: String
     
@@ -49,12 +50,13 @@ struct HorizontalRouteListView: View {
         .frame(maxWidth: .infinity)
         .sheet(isPresented: $selectedRouteManager.showRoute) {
             if let routeToShow = selectedRouteManager.selectedRoute {
-                RouteDetailView(route: routeToShow)
+                RouteDetailView(viewModel: viewModel, route: routeToShow)
             }
         }
     }
     
-    init(routes: [RouteViewModel], size: String = "large") {
+    init(viewModel: GoodServiceViewModel, routes: [RouteViewModel], size: String = "large") {
+        self.viewModel = viewModel
         self.routes = routes
         self.size = size
     }
@@ -79,8 +81,10 @@ struct HorizontalRouteListView_Previews: PreviewProvider {
 //        RouteViewModel(route: routeN),
 //        RouteViewModel(route: routeS),
     ]
+    static var viewModel = GoodServiceViewModel(goodServiceFetcher: GoodServiceFetcher())
     static var previews: some View {
-        HorizontalRouteListView(routes: routes)
+        
+        HorizontalRouteListView(viewModel: viewModel, routes: routes)
 //            .previewLayout(.sizeThatFits)
     }
 }
